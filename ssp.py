@@ -172,8 +172,8 @@ t.save_json(ssp,filepath_json)
 
 
 # %% Validation
-# /Users/dcc9/Desktop/Validate/oscal-cli-1.0.2 ssp validate /Users/dcc9/Code/OSCAL-DEFINE/local\ copy.files/builder/SSP.exports.example.a.json >ssp.txt 2>&1
+# Validate/oscal-cli-1.0.2 ssp validate output/SSP.exports.example.a.json >ssp.txt 2>&1
 
 ## python ssp.py
-## /Users/dcc9/Desktop/Validate/oscal-cli-1.0.2 ssp validate /Users/dcc9/Code/OSCAL-DEFINE/local\ copy.files/builder/SSP.exports.example.a.json
-## /Users/dcc9/Desktop/Validate/oscal-cli-1.0.2 ssp validate /Users/dcc9/Code/OSCAL-DEFINE/local\ copy.files/builder/SSP.exports.example.a.yaml
+## Validate/oscal-cli-1.0.2 ssp validate output/SSP.exports.example.a.json
+## Validate/oscal-cli-1.0.2 ssp validate output/SSP.exports.example.a.yaml
