@@ -8,7 +8,7 @@ fake_it = Faker()
 
 
 from oscalic.system_security_plan       import SystemSecurityPlan as SSP
-from oscalic.control                    import ControlAssembly as Control
+from oscalic.component_definition       import ComponentDefinition as CDef
 from oscalic.control                    import StatementAssembly as Statement
 from oscalic.control                    import ByComponentAssembly as ByComponent
 from oscalic                            import Template, Helper, Validation
@@ -172,3 +172,103 @@ def build_ssp(filepath_template, metadata, controls):
 
 
     return ssp
+
+
+
+
+def build_crm(filepath_template, ssp):
+
+    today                       = datetime.datetime.now()
+    today_format                = '%Y-%m-%dT00:00:00.0000-04:00'
+    today                       = today.strftime(today_format)
+
+    crm_data = {
+        'uuid:document':        str(Helper.get_uuid()), 
+        'modified_date':        f"{today}",
+    }
+    # ssp_data.update(ssp.metadata)
+
+    crm_content = Template.apply(filepath_template, crm_data)
+    ssp         = Helper.from_yaml(SSP, ssp_content)
+
+    # for control_id, group in controls:
+    #     # if control_id == 'ac-2':
+    #         # print(control_id.upper())
+
+    #     statements = list()
+    #     for index, row in group.iterrows():
+    #         components = list()
+            
+    #         # 'implementation-status': {
+    #         #     'state': row['state'],
+    #         #     'remarks': ''
+    #         # }
+
+    #         provided_uuid = str(Helper.get_uuid())
+    #         provided_content = [{
+    #             'uuid': provided_uuid,
+    #             'description': row['export_provided'],
+
+    #         }]
+
+    #         responsibilities_content = [{
+    #             'uuid': str(Helper.get_uuid()),
+    #             'provided-uuid': provided_uuid,
+    #             'description': row['export_responsibility']
+    #         }]
+
+    #         satisfied_content = [{
+    #             'uuid': str(Helper.get_uuid()),
+    #             'responsibility-uuid': str(Helper.get_uuid()),
+    #             'description': row['export_responsibility']                 
+    #         }]
+
+    #         inherited_content = [{
+    #             'uuid': str(Helper.get_uuid()),
+    #             'provided-uuid': provided_uuid,
+    #             # 'satisfied-uuid': satisfied_uuid,
+    #             'description': row['export_responsibility']                 
+    #         }]
+
+    #         #############################################################
+    #         # Deprecated
+    #         # export_content = {
+    #         #     'provided': provided_content,
+    #         #     'responsibilities': responsibilities_content
+    #         # } 
+
+    #         #############################################################
+    #         component_content = {
+    #             'component_uuid': this_system_component_uuid,
+    #             'uuid': str(Helper.get_uuid()),
+    #             'description': row['description'],
+    #             'provided': provided_content,
+    #             'responsibilities': responsibilities_content,
+    #             'satisfied': satisfied_content,
+    #             'inherited':inherited_content
+    #             # 'export': export_content
+    #         }
+    #         component = ByComponent.construct(**component_content)
+    #         components.append(component)
+
+    #         #############################################################
+    #         statement_content = {
+    #             'statement_id': row['statement_id'],
+    #             'uuid': str(Helper.get_uuid()),
+    #             'by_components': components
+    #         }
+    #         statement = Statement.construct(**statement_content)
+    #         statements.append(statement)
+
+    #     control_content = {
+    #         'uuid': str(Helper.get_uuid()),
+    #         'control_id': row['control_id'],
+    #         'statements': statements
+    #     }
+
+
+    #     control = Control.construct(**control_content)
+    #     ssp.system_security_plan.control_implementation.implemented_requirements.append(control)
+
+
+    return crm

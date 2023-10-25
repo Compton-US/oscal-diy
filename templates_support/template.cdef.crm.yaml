@@ -1,0 +1,24 @@
+
+component-definition:
+  uuid: {{ uuid:document }}
+
+  metadata:
+    title: {{ ssp_title }}
+    last-modified: '2022-12-21T00:00:00.0000-04:00'
+    version: {{ version }}
+    oscal-version: 1.0.4
+    roles:
+      - id: admin
+        title: Administrator
+    parties:
+      - uuid: {{ uuid:party }}
+        type: person
+  
+    components:
+      - uuid: {{ uuid:component }}
+        type: responsibility-matrix
+        title: Statement of Shared Responsibility
+        description: This is a demonstration CRM.
+        control-implementation:
+          description: "List of Controls"
+          implemented-requirements: []
