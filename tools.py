@@ -13,7 +13,7 @@ from oscalic.control                    import StatementAssembly as Statement
 from oscalic.control                    import ByComponentAssembly as ByComponent
 from oscalic.control                    import ControlAssembly as Control
 from oscalic                            import Template, Helper, Validation
-
+from oscalic.common                     import SatisfiedAssembly, ResponsibilitiesAssembly, InheritedAssembly, ProvidedAssembly
 class Identifier:
     uuid = None
     name = None
@@ -82,6 +82,17 @@ def get_related_uuids(target_name, source_name, source_uuid=None):
     return rel
 
 
+def get_components(document):
+    components = []
+    # print(document)
+    for requirement in document.implemented_requirements:
+        for statements in requirement.statements:
+            for component in statements.by_components:
+                components.append(component)
+
+    return components
+
+
 def build_ssp(filepath_template, metadata, controls=None, crm=None):
 
     this_system_component_uuid  = str(Helper.get_uuid())
@@ -104,6 +115,15 @@ def build_ssp(filepath_template, metadata, controls=None, crm=None):
 
     ssp_content = Template.apply(filepath_template, ssp_data)
     ssp         = Helper.from_yaml(SSP, ssp_content)
+
+    if crm != None:
+        crm_components = get_components(crm.component_definition.capabilities[0]['control_implementation'])
+
+        # print('*'*50,"\n")
+        # print("Component Definition", dir(crm.component_definition.capabilities)) #, crm_components) #, crm.component_definition.capabilities)
+        # print(crm_components)
+        # print('*'*50,"\n")
+        # exit(99)
 
     for control_id, group in controls:
         # if control_id == 'ac-2':
@@ -150,6 +170,7 @@ def build_ssp(filepath_template, metadata, controls=None, crm=None):
                     # 'satisfied-uuid': satisfied_uuid,
                     'description': row['export_responsibility']                 
                 }]
+
 
             #############################################################
             # Deprecated
@@ -220,28 +241,30 @@ def build_crm(filepath_template, ssp):
     crm = Helper.from_yaml(CDef, crm_content)
 
     # Loop through each requirement in the ssps and export the exportable.
-    for requirement in ssp.system_security_plan.control_implementation.implemented_requirements:
-        for statements in requirement.statements:
-            for component in statements.by_components:
-                if 'provided' in dir(component) and not \
-                    ('exportable' in component.provided[0] and \
-                    component.provided[0]['exportable'] == True):
-                    del component.provided
+    # for requirement in ssp.system_security_plan.control_implementation.implemented_requirements:
+    #     for statements in requirement.statements:
+    
+    for component in get_components(ssp.system_security_plan.control_implementation):
+        print(component)
+        if 'provided' in dir(component):
+            if ('exportable' in component.provided[0] and \
+            component.provided[0]['exportable'] == True):
+                del component.provided
 
-                if 'responsibilities' in dir(component) and not \
-                    ('exportable' in component.responsibilities[0] and \
-                    component.responsibilities[0]['exportable'] == True):
-                    del component.responsibilities
+        if 'responsibilities' in dir(component):
+            if ('exportable' in component.responsibilities[0] and \
+            component.responsibilities[0]['exportable'] == True):
+                del component.responsibilities
 
-                if 'satisfied' in dir(component) and not \
-                    ('exportable' in component.satisfied[0] and \
-                    component.satisfied[0]['exportable'] == True):
-                    del component.satisfied
+        if 'satisfied' in dir(component):
+            if ('exportable' in component.satisfied[0] and \
+            component.satisfied[0]['exportable'] == True):
+                del component.satisfied
 
-                if 'inherited' in dir(component) and not \
-                    ('exportable' in component.inherited[0] and \
-                    component.inherited[0]['exportable'] == True):
-                    del component.inherited
+        if 'inherited' in dir(component) and component.inherited != None:
+            if ('exportable' in component.inherited[0] and \
+            component.inherited[0]['exportable'] == True):
+                del component.inherited
 
     crm.component_definition.capabilities=[{
         'uuid': str(Helper.get_uuid()),

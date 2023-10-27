@@ -33,19 +33,20 @@ lb                          = "\n\n"
 make_xml                    = False
 validate_oscal_cli          = True
 oscal_cli                   = 'Validate/oscal-cli-1.0.2'
+crm                         = None
 
 #%% Setup
 df_content                  = pd.read_csv(filepath_csv)
-grouped_df                  = df_content.groupby('control_id')
+grouped_controls_df         = df_content.groupby('control_id')
 
 t.clean_output(dir_output)
 
 #%% Load all templates
-templates = []
-for root, dirs, files in os.walk(dir_template):
-    for file in files:
-        if file.endswith(".yaml"):
-             templates.append(file)
+templates = ['template.ssp.csp.yaml','template.ssp.msp.yaml','template.ssp.app.yaml']
+# for root, dirs, files in os.walk(dir_template):
+#     for file in files:
+#         if file.endswith(".yaml"):
+#              templates.append(file)
 
 
 
@@ -95,7 +96,10 @@ for ssp_template in templates:
 
     # Build Content
     print("Building SSP")
-    ssp = t.build_ssp(filepath_template, metadata, grouped_df)
+    if current_org == 'csp':
+        crm = None
+
+    ssp = t.build_ssp(filepath_template, metadata, grouped_controls_df, crm)
 
     # Export YAML file
     print(f"YAML: {filepath_yaml}")
@@ -115,6 +119,8 @@ for ssp_template in templates:
     if make_xml:
         with open(filepath_validation_log, "a") as outfile:
             subprocess.run([oscal_cli,'ssp','convert','--to=xml',filepath_json,filepath_json+'.xml'], stdout=outfile, stderr=outfile)
+
+
 
     if current_org != 'app':
         crm = t.build_crm(filepath_template_crm, ssp)
