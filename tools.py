@@ -26,6 +26,8 @@ all_model_metadata = {
     'oscal_version': '1.1.1'
 }
 
+filler_word_list=['sample', 'security', 'content', 'response', 'explanation', 'identifying']
+
 ########################################################################
 #%% Export YAML file
 def save_yaml(ssp, filepath_yaml):
@@ -52,15 +54,16 @@ def clean_output(dir):
         if ext in ['json','xml','yaml','log']:
             os.remove(os.path.join(dir,filename))
 
+def random_prose(input, length=10):
+    words = input.split()
+    result = fake_it.sentence(nb_words=length, ext_word_list=words)
+
+    return result
 
 ########################################################################
-# def get_ipsom_provided:
 # source <- target
 # provided <- inherited
-
 # responsibility <- satisfied
-
-
 # satisfied <- provided
 # satisfied <- responsibility
 # satisfied <- inherited
@@ -79,7 +82,7 @@ def get_related_uuids(target_name, source_name, source_uuid=None):
     return rel
 
 
-def build_ssp(filepath_template, metadata, controls):
+def build_ssp(filepath_template, metadata, controls=None, crm=None):
 
     this_system_component_uuid  = str(Helper.get_uuid())
     today                       = datetime.datetime.now()
@@ -118,7 +121,9 @@ def build_ssp(filepath_template, metadata, controls):
             provided_uuid = str(Helper.get_uuid())
             provided_content = [{
                 'uuid': provided_uuid,
-                'description': row['export_provided'],
+                'description': row['export_provided'] 
+                                    + ' (Random Content Follows) ' 
+                                    + random_prose(row['export_provided']),
                 'exportable': True
             }]
 
@@ -132,7 +137,9 @@ def build_ssp(filepath_template, metadata, controls):
             satisfied_content = [{
                 'uuid': str(Helper.get_uuid()),
                 'responsibility-uuid': str(Helper.get_uuid()),
-                'description': row['export_responsibility'],              
+                'description': row['export_responsibility'] 
+                                    + ' (Random Content Follows) ' 
+                                    + random_prose(row['export_provided'])     
             }]
 
             inherited_content = None
@@ -242,85 +249,5 @@ def build_crm(filepath_template, ssp):
         'description': 'This is a demonstration CRM.',
         'control_implementation': ssp.system_security_plan.control_implementation
     }]
-
-    # for control_id, group in controls:
-    #     # if control_id == 'ac-2':
-    #         # print(control_id.upper())
-
-    #     statements = list()
-    #     for index, row in group.iterrows():
-    #         components = list()
-            
-    #         # 'implementation-status': {
-    #         #     'state': row['state'],
-    #         #     'remarks': ''
-    #         # }
-
-    #         provided_uuid = str(Helper.get_uuid())
-    #         provided_content = [{
-    #             'uuid': provided_uuid,
-    #             'description': row['export_provided'],
-
-    #         }]
-
-    #         responsibilities_content = [{
-    #             'uuid': str(Helper.get_uuid()),
-    #             'provided-uuid': provided_uuid,
-    #             'description': row['export_responsibility']
-    #         }]
-
-    #         satisfied_content = [{
-    #             'uuid': str(Helper.get_uuid()),
-    #             'responsibility-uuid': str(Helper.get_uuid()),
-    #             'description': row['export_responsibility']                 
-    #         }]
-
-    #         inherited_content = [{
-    #             'uuid': str(Helper.get_uuid()),
-    #             'provided-uuid': provided_uuid,
-    #             # 'satisfied-uuid': satisfied_uuid,
-    #             'description': row['export_responsibility']                 
-    #         }]
-
-    #         #############################################################
-    #         # Deprecated
-    #         # export_content = {
-    #         #     'provided': provided_content,
-    #         #     'responsibilities': responsibilities_content
-    #         # } 
-
-    #         #############################################################
-    #         component_content = {
-    #             'component_uuid': this_system_component_uuid,
-    #             'uuid': str(Helper.get_uuid()),
-    #             'description': row['description'],
-    #             'provided': provided_content,
-    #             'responsibilities': responsibilities_content,
-    #             'satisfied': satisfied_content,
-    #             'inherited':inherited_content
-    #             # 'export': export_content
-    #         }
-    #         component = ByComponent.construct(**component_content)
-    #         components.append(component)
-
-    #         #############################################################
-    #         statement_content = {
-    #             'statement_id': row['statement_id'],
-    #             'uuid': str(Helper.get_uuid()),
-    #             'by_components': components
-    #         }
-    #         statement = Statement.construct(**statement_content)
-    #         statements.append(statement)
-
-    #     control_content = {
-    #         'uuid': str(Helper.get_uuid()),
-    #         'control_id': row['control_id'],
-    #         'statements': statements
-    #     }
-
-
-    #     control = Control.construct(**control_content)
-    #     ssp.system_security_plan.control_implementation.implemented_requirements.append(control)
-
 
     return crm
