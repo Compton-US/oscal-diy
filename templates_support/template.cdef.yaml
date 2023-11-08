@@ -1,4 +1,4 @@
-responsibility-sharing:
+component-definition:
   uuid: {{ uuid:document }}
   type: responsibility-matrix
   metadata:

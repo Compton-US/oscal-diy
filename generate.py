@@ -1,13 +1,13 @@
-########################################################################
+#%%#######################################################################
 #%% Work with controls from: https://github.com/usnistgov/csv-synthetic-controls/
 
 import os, subprocess
 import pandas as pd
 import tools as t
+import pandas as pd
 
 
-
-########################################################################
+#%%#######################################################################
 
 error_condition             = None
 errors                      = list()
@@ -50,7 +50,7 @@ templates = ['template.ssp.csp.yaml','template.ssp.msp.yaml','template.ssp.app.y
 
 
 
-########################################################################
+#%%#######################################################################
 
 org_metadata = {}
 
@@ -78,7 +78,7 @@ org_metadata['app'] = {
 
 
 
-########################################################################
+#%%#######################################################################
 #%% Build SSPs
 for ssp_template in templates:
     current_org                 = ssp_template.split('.')[2:-1][0]
@@ -109,6 +109,8 @@ for ssp_template in templates:
     print(f"JSON: {filepath_json}")
     t.save_json(ssp, filepath_json)
 
+
+
     if validate_oscal_cli:
         with open(filepath_validation_log, "a") as outfile:
             subprocess.run([oscal_cli, 'ssp', 'validate', filepath_yaml], stdout=outfile, stderr=outfile)
@@ -133,6 +135,8 @@ for ssp_template in templates:
         print(f"CRM JSON: {filepath_crm_json}")
         t.save_json(crm, filepath_crm_json)      
 
+
+
         if validate_oscal_cli:
             with open(filepath_validation_log, "a") as outfile:
                 subprocess.run([oscal_cli, 'component-definition', 'validate', filepath_crm_yaml], stdout=outfile, stderr=outfile)
@@ -146,5 +150,14 @@ for ssp_template in templates:
 
     print("\n\n")
 
+#%%#######################################################################
+t.record_collection.records = t.record_list
+record_content = t.record_collection.dict()['records']
 
+print(record_content)
 
+#%%
+df = pd.DataFrame(record_content)
+df.to_csv('test.csv')
+
+# %%
