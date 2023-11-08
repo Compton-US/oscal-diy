@@ -1,6 +1,6 @@
 {
   "responsibility-sharing": {
-    "uuid": "CRMdcf438-9c7b-4919-9be7-de72e68c0b53",
+    "uuid": "CRMea9cfd-b7e7-4749-a7d9-5e8eb046219e",
     "metadata": {
       "title": "Customer Responsibility Matrix",
       "last-modified": "2023-11-08T00:00:00.0000-04:00",
@@ -21,35 +21,35 @@
     },
     "capabilities": [
       {
-        "uuid": "CRM348f94-59d7-4b6d-97d5-c1597d5101d3",
+        "uuid": "CRMe48d28-a99a-461e-a999-ef0b556f3833",
         "name": "Statement of Shared Responsibility",
         "description": "This is a demonstration CRM.",
         "control_implementation": {
           "description": "List of Controls",
           "implemented-requirements": [
             {
-              "uuid": "MSP0ab797-d7eb-45b1-b280-37e72ec31433",
+              "uuid": "MSP839684-7571-4138-81ee-bfa01d60b988",
               "control-id": "ac-17",
               "statements": [
                 {
-                  "uuid": "MSP9f8eb2-4e70-4af0-918d-b65b933a7d0a",
+                  "uuid": "MSP74c2b5-80c0-422c-848e-76d2761664db",
                   "statement-id": "ac-17_smt.a",
                   "by-components": [
                     {
-                      "uuid": "MSP641f4e-4af0-4627-8df7-7d3fe9527448",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSPa5ca6b-b89b-40bc-9ca4-625f0eb9eedf",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Cloud service provider documents remote access usage restrictions, configuration requirements, and implementation guidance in the SSP.",
                       "provided": [
                         {
-                          "uuid": "MSPbf3ccf-da3c-4192-b16f-dd51d6d5220d",
-                          "description": "The criteria for cloud service provider remote access is documented in the system security plan. (Random Content Follows) For security access security criteria the.",
+                          "uuid": "MSP96c8ec-8ce8-4df7-8441-1791a2818675",
+                          "description": "The criteria for cloud service provider remote access is documented in the system security plan. (Random Content Follows) System remote for cloud plan. remote documented The the system remote.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSP5c19dd-e737-4fab-a126-8999c53457a0",
-                          "provided-uuid": "MSPbf3ccf-da3c-4192-b16f-dd51d6d5220d",
+                          "uuid": "MSP53dbd1-864c-4239-b5af-24f7e16e74ce",
+                          "provided-uuid": "MSP96c8ec-8ce8-4df7-8441-1791a2818675",
                           "description": "Requirements for cloud service provider remote access is documented.",
                           "exportable": true
                         }
@@ -58,24 +58,24 @@
                   ]
                 },
                 {
-                  "uuid": "MSP69958c-e74d-4749-9018-ce8c326ccf92",
+                  "uuid": "MSP0ae8bd-5b0a-478a-acc7-28c48a508084",
                   "statement-id": "ac-17_smt.b",
                   "by-components": [
                     {
-                      "uuid": "MSPa61170-13d6-442a-a0a2-73ed494181b3",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSP3fa636-e5f8-46c9-8b1f-a883f337da9c",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Cloud service provider authorizes each type of remote access to the system.",
                       "provided": [
                         {
-                          "uuid": "MSPa284a9-6740-4932-8afe-d6df5a5ea44e",
-                          "description": "Specific types of remote access are authorized by the cloud service provider. (Random Content Follows) Remote by by access access Specific service types remote the of access are.",
+                          "uuid": "MSP080a1f-e66e-4734-abde-4ada727ad990",
+                          "description": "Specific types of remote access are authorized by the cloud service provider. (Random Content Follows) Types provider. of by access are the access Specific types remote are.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSPf1f800-f6c7-4bf5-b4f3-6d98c61505d4",
-                          "provided-uuid": "MSPa284a9-6740-4932-8afe-d6df5a5ea44e",
+                          "uuid": "MSPf48866-4336-4a02-8e70-bbfeb4b08d11",
+                          "provided-uuid": "MSP080a1f-e66e-4734-abde-4ada727ad990",
                           "description": "Individual remote access types are authorized by the cloud service provider.",
                           "exportable": true
                         }
@@ -86,28 +86,28 @@
               ]
             },
             {
-              "uuid": "MSP6f7f4f-978d-4d54-95ee-0f2c3f3b3e5e",
+              "uuid": "MSP4cda52-ea83-4348-a895-9d3f37766966",
               "control-id": "ac-17.1",
               "statements": [
                 {
-                  "uuid": "MSP163a63-d671-4438-873d-898abea5f8e6",
+                  "uuid": "MSPb5f34b-2d80-4602-af12-c135c68d21ef",
                   "statement-id": "ac-17.1",
                   "by-components": [
                     {
-                      "uuid": "MSPe30542-138d-4c55-9439-8b3a9dc5b9a0",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSP2de473-7d92-40df-ab20-3db19cd84c6d",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Cloud service provider network routers are used to monitor and control remote access.",
                       "provided": [
                         {
-                          "uuid": "MSP0f890d-30f8-4f15-a4b5-807918ac757b",
-                          "description": "Boundary devices monitor and control cloud service provider remote access. (Random Content Follows) Control cloud provider service Boundary cloud service.",
+                          "uuid": "MSP61e657-7228-407e-a1a2-7632572738c6",
+                          "description": "Boundary devices monitor and control cloud service provider remote access. (Random Content Follows) Cloud devices provider Boundary devices devices service and and monitor and.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSPfa02c4-0d49-4801-bf6a-16c7504f3e91",
-                          "provided-uuid": "MSP0f890d-30f8-4f15-a4b5-807918ac757b",
+                          "uuid": "MSPd3e274-8415-4082-893b-70270dc0d4b8",
+                          "provided-uuid": "MSP61e657-7228-407e-a1a2-7632572738c6",
                           "description": "Remote access is monitored and controlled by the cloud service provider.",
                           "exportable": true
                         }
@@ -118,28 +118,28 @@
               ]
             },
             {
-              "uuid": "MSP203669-00db-41a4-817e-0a381373e93f",
+              "uuid": "MSP869575-0408-4e13-9be2-4725ccdf639f",
               "control-id": "ac-17.2",
               "statements": [
                 {
-                  "uuid": "MSP9c6ad7-fa2f-46f7-b544-bd4384ab0e18",
+                  "uuid": "MSP0c9990-ba01-4498-91b8-faa9ffc56c8d",
                   "statement-id": "ac-17.2",
                   "by-components": [
                     {
-                      "uuid": "MSP6acbb7-ccfd-450f-a670-aadbb1570252",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSP717dd2-9f7c-4c34-9d61-5075c04c200f",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Cloud service provider implements TLS 1.2 to protect the confidentiality and integrity of remote sessions.",
                       "provided": [
                         {
-                          "uuid": "MSP3ea614-1562-4080-b282-31cfc96b74c7",
-                          "description": "TLS has been implemented to protect cloud service provider remote session transmissions. (Random Content Follows) Remote transmissions. session to to implemented protect session TLS cloud TLS to remote.",
+                          "uuid": "MSP5f5f0b-a365-45b0-bbef-566c0816a751",
+                          "description": "TLS has been implemented to protect cloud service provider remote session transmissions. (Random Content Follows) Transmissions. TLS protect transmissions. transmissions. remote to has remote protect protect provider.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSP5b637c-ca7e-4e61-ae56-d8b66ef9927d",
-                          "provided-uuid": "MSP3ea614-1562-4080-b282-31cfc96b74c7",
+                          "uuid": "MSPd8ca6b-e46f-4f89-b8d3-0751c26c6991",
+                          "provided-uuid": "MSP5f5f0b-a365-45b0-bbef-566c0816a751",
                           "description": "Encryption has been implemented to protect remote cloud service provider sessions.",
                           "exportable": true
                         }
@@ -150,28 +150,28 @@
               ]
             },
             {
-              "uuid": "MSPbc4cc3-00f7-4f60-9c38-423daae558ec",
+              "uuid": "MSP07d745-ad68-4481-897a-5b3a1562acfe",
               "control-id": "ac-17.3",
               "statements": [
                 {
-                  "uuid": "MSP38efdd-710f-420d-a2d7-ec3c95716ee4",
+                  "uuid": "MSP017590-9173-4706-8f85-0a9791543dbd",
                   "statement-id": "ac-17.3",
                   "by-components": [
                     {
-                      "uuid": "MSP0edfc2-b159-47cd-bde8-1727b4306005",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSPd3c102-215e-4731-9238-68ac35832d6b",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Cloud service provider remote access is routed through network routers inside the network and at the boundary.",
                       "provided": [
                         {
-                          "uuid": "MSP95b0fc-d2b4-4768-a9fb-970d71a29e52",
-                          "description": "Remote access is transmitted through cloud service provider network devices inside the network and at the boundary. (Random Content Follows) At provider is service inside service network at boundary. at devices the inside.",
+                          "uuid": "MSPeb7eae-6abe-4fcf-8b98-5c78b4467431",
+                          "description": "Remote access is transmitted through cloud service provider network devices inside the network and at the boundary. (Random Content Follows) Inside network through network provider cloud through at.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSP5061d4-388c-4869-a4e5-8d9ba37e98b2",
-                          "provided-uuid": "MSP95b0fc-d2b4-4768-a9fb-970d71a29e52",
+                          "uuid": "MSP05207d-02d6-4259-93db-8669eceed524",
+                          "provided-uuid": "MSPeb7eae-6abe-4fcf-8b98-5c78b4467431",
                           "description": "Remote access is transmitted through cloud service provider network devices.",
                           "exportable": true
                         }
@@ -182,28 +182,28 @@
               ]
             },
             {
-              "uuid": "MSP9e3ead-b023-4c7d-b4a4-52e87fc93e72",
+              "uuid": "MSP1b72e5-bfe3-4a16-8518-15a7fff45934",
               "control-id": "ac-17.4",
               "statements": [
                 {
-                  "uuid": "MSP7c5e01-d57a-4961-8059-bd88904aaafe",
+                  "uuid": "MSP5455d4-2455-492f-ad6b-f88947b232d1",
                   "statement-id": "ac-17.4_smt.a",
                   "by-components": [
                     {
-                      "uuid": "MSP2941c0-9bff-44b0-bd4c-686237a2b879",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSP313c0d-aa6a-44b3-a515-7af2ba5e71f9",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Cloud service provider system owner authorizes remote access via e-mail to the system administrators. System administrators use privileged commands to manage and configure systems.",
                       "provided": [
                         {
-                          "uuid": "MSPae377d-412a-489b-9a1c-fcbf42ca6b62",
-                          "description": "Cloud service provider system owner approves remote access where system administrators can execute privileged commands. (Random Content Follows) Administrators system service commands. Cloud where access access service privileged remote.",
+                          "uuid": "MSP211dab-5a7f-46b8-995e-c914827c8b93",
+                          "description": "Cloud service provider system owner approves remote access where system administrators can execute privileged commands. (Random Content Follows) Service administrators access commands. service system approves system execute.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSP4b8dc0-78fa-4463-82e2-4bf8cced5996",
-                          "provided-uuid": "MSPae377d-412a-489b-9a1c-fcbf42ca6b62",
+                          "uuid": "MSP6ce664-afc7-43e1-b189-7b2f06230984",
+                          "provided-uuid": "MSP211dab-5a7f-46b8-995e-c914827c8b93",
                           "description": "Execution of privileged commands by remote access is authorized by the cloud service provider system owner.",
                           "exportable": true
                         }
@@ -212,24 +212,24 @@
                   ]
                 },
                 {
-                  "uuid": "MSP42aa37-ae53-406b-8191-1d2504008eef",
+                  "uuid": "MSPe84fff-a8f3-407f-bde9-5e78008b30dc",
                   "statement-id": "ac-17.4_smt.b",
                   "by-components": [
                     {
-                      "uuid": "MSP7010cb-e6ed-4ef4-b793-488f2332abbe",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSP20d46d-0fd2-4566-9f6b-baa10b1bccf2",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Cloud service provider rationale for approving remote access is documented in the SSP.",
                       "provided": [
                         {
-                          "uuid": "MSP36648e-0183-4280-9978-e6e72f09637d",
-                          "description": "Rationale for approving cloud service provider remote access is documented in the system security plan. (Random Content Follows) Rationale cloud for the system access.",
+                          "uuid": "MSP67e00d-aa06-4946-8fae-706ce0c4dfc0",
+                          "description": "Rationale for approving cloud service provider remote access is documented in the system security plan. (Random Content Follows) Plan. security security for service Rationale the cloud plan. security provider Rationale provider.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSPa71e62-273a-4449-a011-e6170bf761df",
-                          "provided-uuid": "MSP36648e-0183-4280-9978-e6e72f09637d",
+                          "uuid": "MSPdb8ad3-e0cf-4aff-928c-ba5d00a8ae40",
+                          "provided-uuid": "MSP67e00d-aa06-4946-8fae-706ce0c4dfc0",
                           "description": "Rationale for approving cloud service provider remote access is documented.",
                           "exportable": true
                         }
@@ -240,28 +240,28 @@
               ]
             },
             {
-              "uuid": "MSP1f5c9e-ce32-400c-99b0-a158dd09414c",
+              "uuid": "MSPf9d242-e67f-42c7-b91f-ef5c9dcdfc15",
               "control-id": "ac-2",
               "statements": [
                 {
-                  "uuid": "MSP179a69-8ff4-4b3b-8ce7-30f4be17d8a2",
+                  "uuid": "MSP063031-c28e-46cb-8711-a0b51d6760b3",
                   "statement-id": "ac-2_smt.a",
                   "by-components": [
                     {
-                      "uuid": "MSP946b3d-b5c1-4f39-b68f-4c45de3f0281",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSPee47fc-78cc-4330-a822-d715ef30f474",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Cloud service provider account management policy identifies that only user and system administrator accounts will be allowed on the system.",
                       "provided": [
                         {
-                          "uuid": "MSP2de2af-b20e-4262-8021-4b6e587fc6cd",
-                          "description": "Cloud service provider account management policy identifies users allowed on the system. (Random Content Follows) Service Cloud account Cloud service identifies service provider account.",
+                          "uuid": "MSP77acff-3b6e-4427-8b8a-47aad75a68ed",
+                          "description": "Cloud service provider account management policy identifies users allowed on the system. (Random Content Follows) System. the identifies system. on service the users.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSPffb178-0c99-482a-b662-27ffe7e5d858",
-                          "provided-uuid": "MSP2de2af-b20e-4262-8021-4b6e587fc6cd",
+                          "uuid": "MSP90d13c-b372-47b0-94c4-a416847a474c",
+                          "provided-uuid": "MSP77acff-3b6e-4427-8b8a-47aad75a68ed",
                           "description": "Account management policy identifies cloud service provider users allowed on the system.",
                           "exportable": true
                         }
@@ -270,24 +270,24 @@
                   ]
                 },
                 {
-                  "uuid": "MSP1a7417-8673-4096-9db9-691da2e77181",
+                  "uuid": "MSPd76e30-1d99-40c3-af22-6066ba2260a2",
                   "statement-id": "ac-2_smt.b",
                   "by-components": [
                     {
-                      "uuid": "MSPedbf7c-9fad-43a1-be27-fbebfb5c6edc",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSP0ccd85-4e4e-40d3-8caa-0090f13c19a5",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Cloud service provider account managers have been assigned.",
                       "provided": [
                         {
-                          "uuid": "MSPd9c01b-8456-4be6-a244-d1951289c87d",
-                          "description": "Cloud service provider account managers have been assigned. (Random Content Follows) Been account service assigned. account provider been assigned. service.",
+                          "uuid": "MSPb23561-6197-41ae-9975-7d4bf17b690b",
+                          "description": "Cloud service provider account managers have been assigned. (Random Content Follows) Assigned. have provider Cloud Cloud have service have Cloud Cloud provider account.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSP6955cd-98e4-4d16-aa28-92b7ce7d2f69",
-                          "provided-uuid": "MSPd9c01b-8456-4be6-a244-d1951289c87d",
+                          "uuid": "MSP81b4da-e41f-49a2-bc50-3c4f62eb213e",
+                          "provided-uuid": "MSPb23561-6197-41ae-9975-7d4bf17b690b",
                           "description": "Cloud service provider account management roles have been assigned.",
                           "exportable": true
                         }
@@ -296,24 +296,24 @@
                   ]
                 },
                 {
-                  "uuid": "MSP15d187-bbf4-4817-adf0-6509bf50fd42",
+                  "uuid": "MSPe847f6-d56e-4601-bfe1-35f77e5b7f51",
                   "statement-id": "ac-2_smt.c",
                   "by-components": [
                     {
-                      "uuid": "MSP355172-a310-48a6-ad80-db31b5a89abd",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSP15dfcc-00b0-4428-8232-94246a457621",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Cloud service provider account requests include business need for the account.",
                       "provided": [
                         {
-                          "uuid": "MSPe368ea-035e-47c9-b453-62307012cd91",
-                          "description": "Cloud service provider account requests include the need for the account. (Random Content Follows) Requests include Cloud the account include service for service.",
+                          "uuid": "MSP4ea9ce-70ac-4744-be13-28adc46637fd",
+                          "description": "Cloud service provider account requests include the need for the account. (Random Content Follows) The need Cloud account. account. Cloud Cloud need requests need the account for.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSP91dc4d-9ca8-431f-aaf3-efc461fc3408",
-                          "provided-uuid": "MSPe368ea-035e-47c9-b453-62307012cd91",
+                          "uuid": "MSP164576-0ca2-49e9-81c2-3a7c22abf2b5",
+                          "provided-uuid": "MSP4ea9ce-70ac-4744-be13-28adc46637fd",
                           "description": "The need for the account is identified in the cloud service provider account request.",
                           "exportable": true
                         }
@@ -322,24 +322,24 @@
                   ]
                 },
                 {
-                  "uuid": "MSP5ec2d8-1f28-4603-843a-ffddae41b585",
+                  "uuid": "MSPab001d-175f-4b0a-a3d1-b4f0c48ec47b",
                   "statement-id": "ac-2_smt.d",
                   "by-components": [
                     {
-                      "uuid": "MSPbdc98c-50cb-4501-ba30-2f1174d23b9c",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSP332c51-ddd9-4c24-bb47-2427cad95241",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Cloud service provider account requests include user of the system, their group and/or role membership, privileges, and the business need for the account.",
                       "provided": [
                         {
-                          "uuid": "MSP5fdc07-f362-45f3-a80b-6576e59fc8a1",
-                          "description": "Cloud service provider account request includes user information, their memberships and privileges, and the need for the account. (Random Content Follows) Memberships the need account the request account. and memberships user includes and account request.",
+                          "uuid": "MSP1a5064-b8ac-4938-a5a9-9de527f07570",
+                          "description": "Cloud service provider account request includes user information, their memberships and privileges, and the need for the account. (Random Content Follows) Their information, for their provider includes privileges, service for.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSPe1eb30-309e-460c-9e61-577a7febc185",
-                          "provided-uuid": "MSP5fdc07-f362-45f3-a80b-6576e59fc8a1",
+                          "uuid": "MSP2ce718-6ac5-492b-a726-312171c59861",
+                          "provided-uuid": "MSP1a5064-b8ac-4938-a5a9-9de527f07570",
                           "description": "User information is included in the cloud service provider account request.",
                           "exportable": true
                         }
@@ -348,24 +348,24 @@
                   ]
                 },
                 {
-                  "uuid": "MSP4a182c-aef6-4b8c-915e-b686ae77a1e3",
+                  "uuid": "MSP4a7134-afac-41b0-9aac-7467560abd86",
                   "statement-id": "ac-2_smt.e",
                   "by-components": [
                     {
-                      "uuid": "MSP9617ee-1b51-4bc1-a491-48b83063ef30",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSPd86cb4-00c7-477d-8feb-81e7bba3be7b",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Cloud service provider system owner approves requests to create accounts via e-mail.",
                       "provided": [
                         {
-                          "uuid": "MSP274c62-6dce-428e-aac2-a01cc59e0e52",
-                          "description": "Cloud service provider system owner approves the account. (Random Content Follows) Approves provider Cloud owner account. the owner account. system account. approves Cloud.",
+                          "uuid": "MSPe371a2-dac3-450f-ac46-26a1d0705e97",
+                          "description": "Cloud service provider system owner approves the account. (Random Content Follows) Owner approves approves owner service the.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSP86fb1a-857c-45b0-90cd-0a5cd1adcdd7",
-                          "provided-uuid": "MSP274c62-6dce-428e-aac2-a01cc59e0e52",
+                          "uuid": "MSP2509ad-9e3c-4f62-9a00-cbc85109ee0a",
+                          "provided-uuid": "MSPe371a2-dac3-450f-ac46-26a1d0705e97",
                           "description": "Account approvals follow cloud service provider account management policy.",
                           "exportable": true
                         }
@@ -374,24 +374,24 @@
                   ]
                 },
                 {
-                  "uuid": "MSP49b4a8-c2fc-4d65-aa1c-73dfd8ae3a4f",
+                  "uuid": "MSP7d3637-e2fe-4c48-a643-8e252e0d1927",
                   "statement-id": "ac-2_smt.f",
                   "by-components": [
                     {
-                      "uuid": "MSP63364c-e4f3-407f-9187-3ec246d3376f",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSP5cbe55-55b6-4051-b5ea-c7efc0dc577a",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Cloud service provider account management policies and procedures are followed for creating, enabling modifying, disabling, and removing accounts. ",
                       "provided": [
                         {
-                          "uuid": "MSPcfa361-835f-4688-8286-f0328efcc2a6",
-                          "description": "Cloud service provider account management policy and procedures include actions that can be taken. (Random Content Follows) And include procedures procedures include actions that actions.",
+                          "uuid": "MSP40b7c1-442d-4086-94dd-a73dfc9b8fca",
+                          "description": "Cloud service provider account management policy and procedures include actions that can be taken. (Random Content Follows) Actions and that Cloud service and service and.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSP941206-5531-4b48-9a70-251b7c65616b",
-                          "provided-uuid": "MSPcfa361-835f-4688-8286-f0328efcc2a6",
+                          "uuid": "MSPff3d8a-7672-4104-a063-2ec26354e9d5",
+                          "provided-uuid": "MSP40b7c1-442d-4086-94dd-a73dfc9b8fca",
                           "description": "Account management policy and procedures are followed for managing cloud service provider accounts.",
                           "exportable": true
                         }
@@ -400,24 +400,24 @@
                   ]
                 },
                 {
-                  "uuid": "MSP3110e3-6851-47f6-b180-475de22a4360",
+                  "uuid": "MSPe8b35f-24c7-44f3-b50f-2d69b3c55a78",
                   "statement-id": "ac-2_smt.g",
                   "by-components": [
                     {
-                      "uuid": "MSP5483b3-df57-45ed-aa33-5ab3a3c66c24",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSP89f736-0cd9-4395-a498-77f663d65522",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Cloud service provider system accounts are monitored by the account managers and the system owner is notified if any changes are needed to the account privileges.  ",
                       "provided": [
                         {
-                          "uuid": "MSPd9754c-04bb-46af-80dd-854326401ca2",
-                          "description": "Cloud service provider system accounts are monitored and notifications are sent if any account changes occur. (Random Content Follows) Service and monitored system are provider notifications occur. any.",
+                          "uuid": "MSPce988d-5da8-475d-8aec-5e5c15d94b34",
+                          "description": "Cloud service provider system accounts are monitored and notifications are sent if any account changes occur. (Random Content Follows) Account if occur. changes sent are and.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSP341554-cf31-47d6-aead-d234215657e4",
-                          "provided-uuid": "MSPd9754c-04bb-46af-80dd-854326401ca2",
+                          "uuid": "MSP037c64-40f6-4407-a55b-5589a9160e93",
+                          "provided-uuid": "MSPce988d-5da8-475d-8aec-5e5c15d94b34",
                           "description": "System accounts of cloud service provider users are monitored and notifications are sent as needed.",
                           "exportable": true
                         }
@@ -426,24 +426,24 @@
                   ]
                 },
                 {
-                  "uuid": "MSP6eb44d-fd50-4972-bc14-7ad033fece8b",
+                  "uuid": "MSPe38447-cfe1-4346-9946-99cfaa683ee9",
                   "statement-id": "ac-2_smt.h",
                   "by-components": [
                     {
-                      "uuid": "MSPc0e2f2-7faf-4fe8-9cc5-d20278462bbc",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSPe10947-017d-4f29-97de-7b93821f8af7",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Cloud service provider system account managers and system owner are notified within 24 hours via e-mail when accounts are no longer required, uses are terminated or transferred, and user privileges change.",
                       "provided": [
                         {
-                          "uuid": "MSPf96fb5-de24-43eb-a324-e79e066bfc40",
-                          "description": "Cloud service provider account managers and system owner are notified within a specific time frame when accounts are modified. (Random Content Follows) When are time service service Cloud managers within frame notified specific service.",
+                          "uuid": "MSP6d8330-b8af-4b01-a976-53cc2c9ba321",
+                          "description": "Cloud service provider account managers and system owner are notified within a specific time frame when accounts are modified. (Random Content Follows) And Cloud are notified within accounts specific system within accounts owner when.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSP4e6a88-4aea-4706-8bb9-41be0836320c",
-                          "provided-uuid": "MSPf96fb5-de24-43eb-a324-e79e066bfc40",
+                          "uuid": "MSPbb4929-73f8-44cd-a76d-402556eadffe",
+                          "provided-uuid": "MSP6d8330-b8af-4b01-a976-53cc2c9ba321",
                           "description": "Cloud service provider account managers and system owner are notified when there are changes to the account.",
                           "exportable": true
                         }
@@ -452,24 +452,24 @@
                   ]
                 },
                 {
-                  "uuid": "MSP8f2c1f-44c5-46ef-86a2-8286a1163294",
+                  "uuid": "MSPdc20ff-e52f-4c3f-9dd1-d3bcb50d7e71",
                   "statement-id": "ac-2_smt.i",
                   "by-components": [
                     {
-                      "uuid": "MSPd66eb0-5524-4480-a294-ca271bd22190",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSP6d8675-6f4c-417f-8d4f-71768d917afb",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Cloud service provider system administrator authorizes access to the system based on a valid access authorization, system usage requirements, and role or responsibility.",
                       "provided": [
                         {
-                          "uuid": "MSP34d764-a55b-4074-aa45-d9da22c76aeb",
-                          "description": "The cloud service provider system administrator authorizes access to the system based on specific criteria. (Random Content Follows) Based specific specific system the system system system.",
+                          "uuid": "MSPbdc0d5-723f-4847-8c4a-caa30a7cb8ca",
+                          "description": "The cloud service provider system administrator authorizes access to the system based on specific criteria. (Random Content Follows) Based system to provider criteria. service specific.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSP4a5361-93e4-487a-9e4f-5f642b1d4c5f",
-                          "provided-uuid": "MSP34d764-a55b-4074-aa45-d9da22c76aeb",
+                          "uuid": "MSP4dac32-55e1-4d67-8961-31eb11134fbc",
+                          "provided-uuid": "MSPbdc0d5-723f-4847-8c4a-caa30a7cb8ca",
                           "description": "Cloud service provider system administrator authorizes access to the system based on policy.",
                           "exportable": true
                         }
@@ -478,24 +478,24 @@
                   ]
                 },
                 {
-                  "uuid": "MSPbca05c-ea67-43de-8153-14f77e4176c9",
+                  "uuid": "MSP8109ae-2a50-4b7f-9bbc-50b6b07e8b60",
                   "statement-id": "ac-2_smt.j",
                   "by-components": [
                     {
-                      "uuid": "MSP24e5c3-f930-4c31-ae01-904d2bbc5fce",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSP6445ca-f126-4f36-ae57-f3a1d7defd4a",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Cloud service provider system accounts are reviewed by the system administrator and account managers every 30 days and the results are sent to the system owner via e-mail.",
                       "provided": [
                         {
-                          "uuid": "MSPa7d1a2-3487-40ed-8b83-dc3e38566a64",
-                          "description": "The cloud service provider system accounts are reviewed by the system administrator and account managers within a specific time frame and results are sent to the system owner. (Random Content Follows) Specific system system provider cloud reviewed system account within frame.",
+                          "uuid": "MSP01da51-1692-47b6-bef9-4107912a85ff",
+                          "description": "The cloud service provider system accounts are reviewed by the system administrator and account managers within a specific time frame and results are sent to the system owner. (Random Content Follows) The administrator frame system to administrator system service The administrator system sent.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSPb4f4fa-af48-4aa1-892c-bf2e04ee865b",
-                          "provided-uuid": "MSPa7d1a2-3487-40ed-8b83-dc3e38566a64",
+                          "uuid": "MSP1c81cc-55ac-4fd6-afc6-f5d13f59a8e2",
+                          "provided-uuid": "MSP01da51-1692-47b6-bef9-4107912a85ff",
                           "description": "The system administrator and account managers review cloud service provider system accounts and the system owner is notified.",
                           "exportable": true
                         }
@@ -504,24 +504,24 @@
                   ]
                 },
                 {
-                  "uuid": "MSP8afc8a-0c3d-4637-bd7d-db41904e664c",
+                  "uuid": "MSP7a1d9a-8068-4f95-adf7-aaf0ba1f26ec",
                   "statement-id": "ac-2_smt.k",
                   "by-components": [
                     {
-                      "uuid": "MSPca6eba-5dc8-49f2-8004-27a4d94af9c5",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSP5edaab-e8d5-4717-a281-21f7aa67892a",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Cloud service provider does not allow the use of shared or group authenticators.",
                       "provided": [
                         {
-                          "uuid": "MSPb70a58-01ed-4bf6-a03d-cef66aca82de",
-                          "description": "The cloud service provider does not allow shared or group authenticators. (Random Content Follows) Does cloud provider The cloud group The service provider cloud provider.",
+                          "uuid": "MSP802c11-abb9-49c6-973c-81cb141ce850",
+                          "description": "The cloud service provider does not allow shared or group authenticators. (Random Content Follows) Allow The does service allow shared The The The allow service or authenticators..",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSPfb5b6c-2974-4e66-95a7-77b7cc67256c",
-                          "provided-uuid": "MSPb70a58-01ed-4bf6-a03d-cef66aca82de",
+                          "uuid": "MSP7fd24e-20d1-43f7-a67e-42f4b4a0378b",
+                          "provided-uuid": "MSP802c11-abb9-49c6-973c-81cb141ce850",
                           "description": "Shared or group authenticators are not allowed by the cloud service provider.",
                           "exportable": true
                         }
@@ -530,24 +530,24 @@
                   ]
                 },
                 {
-                  "uuid": "MSPe816a0-b9f9-4a7c-9f9a-d3ebcf863f2b",
+                  "uuid": "MSP19fc3c-1d14-499c-b63e-8cd5e3aa666e",
                   "statement-id": "ac-2_smt.l",
                   "by-components": [
                     {
-                      "uuid": "MSPaf4234-d23e-4f92-bed7-06e60f362afd",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSPe910d5-2bda-4a9b-a5a2-a70f8eff9eb1",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Cloud service provider account management policy is followed when users are terminated or transferred.",
                       "provided": [
                         {
-                          "uuid": "MSPd843db-85dd-4f1c-99ec-614bf8a0267d",
-                          "description": "The cloud service provider account management policy is followed when the user does not require system access. (Random Content Follows) Cloud provider system is followed does The.",
+                          "uuid": "MSP5c7ec2-51ad-4383-a546-643c9dfebcef",
+                          "description": "The cloud service provider account management policy is followed when the user does not require system access. (Random Content Follows) Provider service account system the not when policy service followed.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSP020869-2e16-4944-baf8-7804d2954efb",
-                          "provided-uuid": "MSPd843db-85dd-4f1c-99ec-614bf8a0267d",
+                          "uuid": "MSP7b1fe7-062d-45ec-b83f-56aeaa62937f",
+                          "provided-uuid": "MSP5c7ec2-51ad-4383-a546-643c9dfebcef",
                           "description": "The account management policy is followed when cloud service provider user accounts are no longer needed.",
                           "exportable": true
                         }
@@ -558,28 +558,28 @@
               ]
             },
             {
-              "uuid": "MSPaedf7c-8827-4cd0-bd39-de0bc5402b58",
+              "uuid": "MSP0b8db7-e05b-459b-9567-1dd9289c12a6",
               "control-id": "ac-2.1",
               "statements": [
                 {
-                  "uuid": "MSP803e1e-7833-40f7-915f-cc9ed1945eb9",
+                  "uuid": "MSP0c6875-a639-45c3-ad5a-43353f433fc2",
                   "statement-id": "ac-2.1",
                   "by-components": [
                     {
-                      "uuid": "MSP39226d-096c-47b6-b5e5-8103b9b23cf2",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSPdd5e2e-901c-4edd-8c50-c5cd863f93fd",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Cloud service provider uses Active Directory to manage system accounts and privileges.",
                       "provided": [
                         {
-                          "uuid": "MSP6823ec-b998-4388-b2ce-2ae92b86808e",
-                          "description": "Active Directory is used to manage cloud service provider system accounts and privileges. (Random Content Follows) Service Directory Directory is cloud is manage system manage.",
+                          "uuid": "MSP89b649-478a-44f3-8fb9-973d535fb9ad",
+                          "description": "Active Directory is used to manage cloud service provider system accounts and privileges. (Random Content Follows) Active privileges. Active used cloud system system and provider used accounts used.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSPdbc081-d191-4706-9bec-5b355808e065",
-                          "provided-uuid": "MSP6823ec-b998-4388-b2ce-2ae92b86808e",
+                          "uuid": "MSPaa341d-fbeb-4e66-88a4-34d5836dbb3c",
+                          "provided-uuid": "MSP89b649-478a-44f3-8fb9-973d535fb9ad",
                           "description": "Automation is used to manage cloud service provider system accounts and privileges.",
                           "exportable": true
                         }
@@ -590,28 +590,28 @@
               ]
             },
             {
-              "uuid": "MSP80e24e-afdb-4fa9-9dfb-d4b227724983",
+              "uuid": "MSP0cc864-908e-4179-b68d-32f2d0f57769",
               "control-id": "ac-2.13",
               "statements": [
                 {
-                  "uuid": "MSP642712-7c9e-4387-b311-03eb33e081fb",
+                  "uuid": "MSP226788-9f01-4395-ac21-4da1a10077c5",
                   "statement-id": "ac-2.13",
                   "by-components": [
                     {
-                      "uuid": "MSPb17887-be0d-4d25-9110-0c6f2a346470",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSP29a505-91f2-4e7c-8920-d1f9cfba14a3",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Cloud service provider user accounts are disabled by the system administrator within 1 hour after they are notified of unauthorized access. An account disabled verification e-mail is sent to the system owner.",
                       "provided": [
                         {
-                          "uuid": "MSP69b052-6451-4e78-8113-02dce3099c9f",
-                          "description": "Cloud service provider user accounts are disabled by the system administrator within specific time frame of notification and the system owner is notified. (Random Content Follows) By system and and and service.",
+                          "uuid": "MSP3b7056-fb55-4a4a-b95f-27bcedee061a",
+                          "description": "Cloud service provider user accounts are disabled by the system administrator within specific time frame of notification and the system owner is notified. (Random Content Follows) Provider the the is of and are.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSP871d98-8d1b-4392-9bb5-196b8a6f7c3b",
-                          "provided-uuid": "MSP69b052-6451-4e78-8113-02dce3099c9f",
+                          "uuid": "MSP07073b-e9f7-4b61-9613-4d24bd20917f",
+                          "provided-uuid": "MSP3b7056-fb55-4a4a-b95f-27bcedee061a",
                           "description": "System administrators disable cloud service provider user accounts when notified and a notification is sent.",
                           "exportable": true
                         }
@@ -622,28 +622,28 @@
               ]
             },
             {
-              "uuid": "MSPf6c016-b669-4817-8a0d-fef4709d9612",
+              "uuid": "MSP4c425f-ca2a-4957-8b69-8adeeec0fee2",
               "control-id": "ac-2.2",
               "statements": [
                 {
-                  "uuid": "MSPf8b385-9411-473f-ad7b-037cbfae7e53",
+                  "uuid": "MSPbe5a6a-8c22-453c-acbd-073130458ec6",
                   "statement-id": "ac-2.2",
                   "by-components": [
                     {
-                      "uuid": "MSP86ad2f-ba30-4798-83ea-8a89b31f87f6",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSP6cb479-fca4-4baa-9e90-dd368d69e1bf",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Cloud service provider removes temporary or emergency accounts after 24 hours of creation.",
                       "provided": [
                         {
-                          "uuid": "MSP0c5ddd-1d2a-4c47-8584-494f200b94f2",
-                          "description": "Temporary or emergency cloud service provider accounts are removed after a specific period of time. (Random Content Follows) After period provider removed specific or a service.",
+                          "uuid": "MSP9640d0-5614-4c63-a35c-1306b1d9898b",
+                          "description": "Temporary or emergency cloud service provider accounts are removed after a specific period of time. (Random Content Follows) Cloud period of service time. specific Temporary provider Temporary or specific period.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSPa5e4fd-1a05-4890-a654-a49e0cb5ec14",
-                          "provided-uuid": "MSP0c5ddd-1d2a-4c47-8584-494f200b94f2",
+                          "uuid": "MSP7e6523-3e4d-4973-9d82-d616bfb5b2cc",
+                          "provided-uuid": "MSP9640d0-5614-4c63-a35c-1306b1d9898b",
                           "description": "Temporary or emergency cloud service provider accounts are removed according to the policy.",
                           "exportable": true
                         }
@@ -654,28 +654,28 @@
               ]
             },
             {
-              "uuid": "MSPad534c-a289-4a4d-bad6-12b8df16d0f3",
+              "uuid": "MSPcd54b9-cc60-408f-ac53-0d0be7b3ae38",
               "control-id": "ac-2.3",
               "statements": [
                 {
-                  "uuid": "MSPff618e-9af6-4dfd-9f43-84a898b63a1b",
+                  "uuid": "MSPc8a5ce-fa02-4e09-8be3-cf62a0448bcc",
                   "statement-id": "ac-2.3",
                   "by-components": [
                     {
-                      "uuid": "MSP7c9b61-af38-40c6-b565-6161e082c762",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSPdbf54e-2c1a-4f65-bb18-f840bdbac8d2",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Cloud service provider accounts are disabled within 24 hours when they have expired, are no longer associated with the user, are in violation of the account management policy, or have been inactive for 17 calendar days.",
                       "provided": [
                         {
-                          "uuid": "MSP8e9c9f-b3f4-4af6-9df7-b1ba45c5a5d0",
-                          "description": "User accounts are disabled by the cloud service provider within a specific time frame, for specific reasons, or if inactive for a specific time frame. (Random Content Follows) Frame, are a for provider within disabled are.",
+                          "uuid": "MSP34858d-8468-4e6a-a7c2-c1ce523388bf",
+                          "description": "User accounts are disabled by the cloud service provider within a specific time frame, for specific reasons, or if inactive for a specific time frame. (Random Content Follows) For frame, for User disabled within disabled.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSP71560c-e0ae-42aa-8b5c-20665c56b813",
-                          "provided-uuid": "MSP8e9c9f-b3f4-4af6-9df7-b1ba45c5a5d0",
+                          "uuid": "MSPab4693-6fce-4be6-8811-3ebafd61acb7",
+                          "provided-uuid": "MSP34858d-8468-4e6a-a7c2-c1ce523388bf",
                           "description": "Accounts are disabled according to cloud service provider policy.",
                           "exportable": true
                         }
@@ -686,28 +686,28 @@
               ]
             },
             {
-              "uuid": "MSP3b1664-d208-48a1-9acc-c85736d68155",
+              "uuid": "MSP1f26e8-f68e-4055-bc4c-583c4f4f16b9",
               "control-id": "ac-2.4",
               "statements": [
                 {
-                  "uuid": "MSPee1a1d-72ff-4df9-981e-58d60d79ea20",
+                  "uuid": "MSPea0022-3d17-418b-b1dd-fcb691277ce0",
                   "statement-id": "ac-2.4",
                   "by-components": [
                     {
-                      "uuid": "MSPa35019-65cf-4aaa-940b-9968b05a0fef",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSPf545eb-777e-401e-bc88-57135283f5c5",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Cloud service provider system audit logs capture account creation, modification, enabling, disabling, and removal.",
                       "provided": [
                         {
-                          "uuid": "MSP40f788-cd0b-4bfe-9d15-2847af6f947b",
-                          "description": "Cloud service provider system auditing captures specific events. (Random Content Follows) Specific system specific captures Cloud auditing Cloud service provider service specific.",
+                          "uuid": "MSP1026dd-cb51-4c83-945f-82fc6002869d",
+                          "description": "Cloud service provider system auditing captures specific events. (Random Content Follows) Events. specific service service captures service captures.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSP77d8da-1719-422e-82af-112a47afa0b3",
-                          "provided-uuid": "MSP40f788-cd0b-4bfe-9d15-2847af6f947b",
+                          "uuid": "MSP643f6d-6566-4241-bd27-d3e7a03c9ca2",
+                          "provided-uuid": "MSP1026dd-cb51-4c83-945f-82fc6002869d",
                           "description": "Audit logs capture events identified in the cloud service provider auditing policy.",
                           "exportable": true
                         }
@@ -718,28 +718,28 @@
               ]
             },
             {
-              "uuid": "MSP178d93-f0ff-460b-ba18-d4bd3c605cea",
+              "uuid": "MSP4c688f-db2a-4373-b861-20531801e66b",
               "control-id": "ac-2.5",
               "statements": [
                 {
-                  "uuid": "MSP7eeae2-2a65-41bd-9344-78c84eabc969",
+                  "uuid": "MSP89d98e-9f89-4cbb-8f83-f92840a4417a",
                   "statement-id": "ac-2.5",
                   "by-components": [
                     {
-                      "uuid": "MSP4438a0-4239-493a-9be4-0a68a9cc7fb0",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSP467402-eb63-4c2f-b455-837d166ca602",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Cloud service provider requires users to log out if 5 minutes of inactivity will occur or if they are leaving their PC, laptop, or any networked device.",
                       "provided": [
                         {
-                          "uuid": "MSP770272-d0c3-4c2f-8519-fae6f981ad38",
-                          "description": "Cloud service provider requires users to log out from their systems if they are going to be inactive for a specific time frame or if they are leaving their systems. (Random Content Follows) Inactive provider going out provider leaving they if.",
+                          "uuid": "MSP8bb5ae-fe13-4978-8d64-dcc19c4fff88",
+                          "description": "Cloud service provider requires users to log out from their systems if they are going to be inactive for a specific time frame or if they are leaving their systems. (Random Content Follows) They frame time requires specific they are time frame.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSPa31af3-0a18-4044-aed1-71f5c6b5edc0",
-                          "provided-uuid": "MSP770272-d0c3-4c2f-8519-fae6f981ad38",
+                          "uuid": "MSPacbb49-13e2-4221-ae3f-163d937d34a8",
+                          "provided-uuid": "MSP8bb5ae-fe13-4978-8d64-dcc19c4fff88",
                           "description": "Users are required to log out of their cloud service provider systems.",
                           "exportable": true
                         }
@@ -750,28 +750,28 @@
               ]
             },
             {
-              "uuid": "MSP258a3f-7ae7-4928-99d4-59cf1e6f3dc9",
+              "uuid": "MSPce9af0-da37-45d2-9e9c-3139503906e2",
               "control-id": "ac-3",
               "statements": [
                 {
-                  "uuid": "MSPc9b1c8-ef73-4de3-87e6-56981a1df47a",
+                  "uuid": "MSP858c9c-63ee-4a42-aa58-e3c5745e3121",
                   "statement-id": "ac-3",
                   "by-components": [
                     {
-                      "uuid": "MSP937768-5ed7-408c-83c5-23cc68f7347c",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSPa81584-a6f6-47a3-a2e7-bb2afaab10af",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Cloud service provider enforces access to the system by assigning users to groups within the Active Directory domain.",
                       "provided": [
                         {
-                          "uuid": "MSPa713fa-8766-40b2-90d5-de158cafafbe",
-                          "description": "The cloud service provider enforces system access by user groups in Active Directory. (Random Content Follows) Cloud The The user provider cloud system service cloud by user Directory..",
+                          "uuid": "MSPaf5842-0c75-4299-a9fa-79d281dd5343",
+                          "description": "The cloud service provider enforces system access by user groups in Active Directory. (Random Content Follows) User cloud cloud enforces user cloud user service in cloud access user in.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSPecb4b8-09f7-4e39-8a12-575fb057500c",
-                          "provided-uuid": "MSPa713fa-8766-40b2-90d5-de158cafafbe",
+                          "uuid": "MSP78ad36-b955-40fe-8523-60587275c6d5",
+                          "provided-uuid": "MSPaf5842-0c75-4299-a9fa-79d281dd5343",
                           "description": "Automation is used to enforce access to cloud service provider system.",
                           "exportable": true
                         }
@@ -782,28 +782,28 @@
               ]
             },
             {
-              "uuid": "MSPf1278a-1954-4325-b3f3-711d130466c4",
+              "uuid": "MSP611152-8813-4257-b804-649ba431ab88",
               "control-id": "ac-6",
               "statements": [
                 {
-                  "uuid": "MSP98a6dd-403d-434e-9ed6-f9c295e81c0e",
+                  "uuid": "MSP831613-76b6-4922-8266-3201d43ad969",
                   "statement-id": "ac-6",
                   "by-components": [
                     {
-                      "uuid": "MSPe20f42-53f4-4d92-b68d-24891f133d7f",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSPdb8dbf-8034-417b-8a66-32d64a91212c",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Cloud service provider users are only provided necessary privileges to complete their tasks, and this is enforced by AD group/role membership.",
                       "provided": [
                         {
-                          "uuid": "MSP3baf16-0a7c-4ec7-9fd2-10a935402634",
-                          "description": "Automation has been implemented to enforce minimum cloud service provider user privileges associated with group/role membership. (Random Content Follows) Minimum user privileges been service provider been enforce has implemented has Automation has.",
+                          "uuid": "MSPed8562-dadd-4ba0-9fc8-4c91762ae088",
+                          "description": "Automation has been implemented to enforce minimum cloud service provider user privileges associated with group/role membership. (Random Content Follows) Implemented to user has implemented has been cloud provider associated.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSPc97fec-02d7-4082-98aa-3e15b8aa9ce6",
-                          "provided-uuid": "MSP3baf16-0a7c-4ec7-9fd2-10a935402634",
+                          "uuid": "MSP8a7fc2-ac97-4df8-92c0-6d60938b9642",
+                          "provided-uuid": "MSPed8562-dadd-4ba0-9fc8-4c91762ae088",
                           "description": "Minimum user privileges are enforced by the cloud service provider.",
                           "exportable": true
                         }
@@ -814,28 +814,28 @@
               ]
             },
             {
-              "uuid": "MSP0fbdc0-2f8e-4422-9fc5-039fb7428478",
+              "uuid": "MSP917ed5-9c8b-4436-8fcd-a3597825af9c",
               "control-id": "ac-6.1",
               "statements": [
                 {
-                  "uuid": "MSP6f1de4-fbcb-4e1a-9c8f-0aed7e8ec0e7",
+                  "uuid": "MSP2e9ffd-fcc3-4bf4-badd-42fc04da4f2e",
                   "statement-id": "ac-6.1",
                   "by-components": [
                     {
-                      "uuid": "MSPe8c344-0668-4f0e-8e71-bad8c199ad74",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSPdddad2-0553-4e18-ad15-0d593c1a01c8",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Cloud service provider user access to the system and privileges are enforced by assignment to groups within the Active Directory domain. Authorized access will be permitted for system administrators to:\n(a) Establish system accounts, configure access authorizations (i.e., permissions, privileges), configure settings for events to be audited, and establish intrusion detection parameters; and\n (b) Review access control lists.\n          ",
                       "provided": [
                         {
-                          "uuid": "MSP20b6cd-2a2b-493a-ae6d-3863182f83f0",
-                          "description": "The cloud service provider system administrators have permissions to conduct role based actions. (Random Content Follows) Based actions. system based provider system permissions.",
+                          "uuid": "MSPb8a478-e783-4082-8d6a-0e7ee1549e6a",
+                          "description": "The cloud service provider system administrators have permissions to conduct role based actions. (Random Content Follows) Provider system system service service to system based actions. based permissions.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSPc5607b-b9f6-44e5-914f-ef760e36628c",
-                          "provided-uuid": "MSP20b6cd-2a2b-493a-ae6d-3863182f83f0",
+                          "uuid": "MSP497a3e-f812-4b15-be1e-74db340853a6",
+                          "provided-uuid": "MSPb8a478-e783-4082-8d6a-0e7ee1549e6a",
                           "description": "Cloud service provider system administrators have privileges to perform certain actions.",
                           "exportable": true
                         }
@@ -846,28 +846,28 @@
               ]
             },
             {
-              "uuid": "MSP431583-9204-4652-ad93-4b9d08d85c82",
+              "uuid": "MSP65cc72-64a4-4e64-ad5e-7e6ac52f42fc",
               "control-id": "ac-6.10",
               "statements": [
                 {
-                  "uuid": "MSPb7696d-0c2e-49da-938e-44aa32e33779",
+                  "uuid": "MSPa698ef-df54-4ae7-9742-c797edf57391",
                   "statement-id": "ac-6.10",
                   "by-components": [
                     {
-                      "uuid": "MSP3c407e-ae2a-46cd-910b-7881ac5b8c93",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSP7b737a-57f5-44e6-884b-bafcc28aa10f",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Only cloud service provider system administrators can execute privileged functions. This is enforced by AD group/role membership.",
                       "provided": [
                         {
-                          "uuid": "MSP7c82d6-dd7d-4ab4-a7ce-9c815d866d9c",
-                          "description": "Automation I used to enforce cloud service provider privileged function execution. (Random Content Follows) Execution. privileged I function to function Automation enforce execution. enforce Automation.",
+                          "uuid": "MSP0eee92-b7a7-4f81-9ad1-c465259e86f3",
+                          "description": "Automation I used to enforce cloud service provider privileged function execution. (Random Content Follows) Execution. function privileged execution. used privileged provider used used execution..",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSP79b972-d98b-4a6a-bc6e-4e25b730c252",
-                          "provided-uuid": "MSP7c82d6-dd7d-4ab4-a7ce-9c815d866d9c",
+                          "uuid": "MSP03f1e0-112b-4515-94b9-f00180681bdd",
+                          "provided-uuid": "MSP0eee92-b7a7-4f81-9ad1-c465259e86f3",
                           "description": "Group/role function execution is enforced by the cloud service provider.",
                           "exportable": true
                         }
@@ -878,28 +878,28 @@
               ]
             },
             {
-              "uuid": "MSP7e1151-5d7d-4d2f-8b77-986494cb7e59",
+              "uuid": "MSP5fe7cd-f6e1-4dea-ba45-ac58622087e5",
               "control-id": "ac-6.2",
               "statements": [
                 {
-                  "uuid": "MSP11b3aa-ff90-4db0-9e02-b548d59b7730",
+                  "uuid": "MSP2e556d-260b-4a73-8bf4-240208dc970a",
                   "statement-id": "ac-6.2",
                   "by-components": [
                     {
-                      "uuid": "MSP8ef93f-c6c4-4a68-885b-1416db38d64f",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSP6b88ff-1e77-440f-85e7-186239129617",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Cloud service provider system administrators with access to establish system accounts, configure access authorizations (i.e., permissions, privileges), configure settings for events to be audited, and establish intrusion detection parameters, or have access to access control lists use non-privileged accounts or roles when accessing non-security functions. ",
                       "provided": [
                         {
-                          "uuid": "MSP2c22f0-ea13-4f5d-9486-dcec89369b1a",
-                          "description": "The cloud service provider system administrators are required to use non-privileged accounts or roles when conducting specific actions. (Random Content Follows) Administrators The administrators are actions. use required required.",
+                          "uuid": "MSPfbaeef-3bbd-4522-a181-7d1fa2fc8fe5",
+                          "description": "The cloud service provider system administrators are required to use non-privileged accounts or roles when conducting specific actions. (Random Content Follows) Conducting to service provider conducting provider provider or are.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSPc77602-98c8-4b73-ae83-195b5a0f1239",
-                          "provided-uuid": "MSP2c22f0-ea13-4f5d-9486-dcec89369b1a",
+                          "uuid": "MSP69d520-32ef-406f-a1d9-40f668b7be72",
+                          "provided-uuid": "MSPfbaeef-3bbd-4522-a181-7d1fa2fc8fe5",
                           "description": "Cloud service provider system administrators are required to use non-privileged accounts for non-privileged functions.",
                           "exportable": true
                         }
@@ -910,28 +910,28 @@
               ]
             },
             {
-              "uuid": "MSP24534e-8f5f-44d8-aa0e-9ed47bfb614c",
+              "uuid": "MSP705718-0720-4da7-92c4-3083fae20711",
               "control-id": "ac-6.5",
               "statements": [
                 {
-                  "uuid": "MSP58d37f-7f0c-4df7-baa0-e632498ebcd7",
+                  "uuid": "MSPbcca52-962e-4f81-a64a-7e25b1df0741",
                   "statement-id": "ac-6.5",
                   "by-components": [
                     {
-                      "uuid": "MSPab0f64-5925-400d-b0d7-5e76fe77c585",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSP4cbfd5-bede-4a3f-82dc-eaec623159dd",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Only cloud service provider system administrators have privileged accounts.",
                       "provided": [
                         {
-                          "uuid": "MSPc71adc-4815-49a6-b22c-ec2fd93761a2",
-                          "description": "Cloud service provider privileged accounts are associated with specific roles. (Random Content Follows) With with provider with Cloud privileged service Cloud associated.",
+                          "uuid": "MSPbb0ed5-e8d9-4a05-b668-c0de491324a9",
+                          "description": "Cloud service provider privileged accounts are associated with specific roles. (Random Content Follows) Roles. accounts are are Cloud accounts with associated are are privileged roles..",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSP443556-0ab6-4416-800d-2b02a2671c57",
-                          "provided-uuid": "MSPc71adc-4815-49a6-b22c-ec2fd93761a2",
+                          "uuid": "MSP2392ed-92c0-49ac-907a-733823461387",
+                          "provided-uuid": "MSPbb0ed5-e8d9-4a05-b668-c0de491324a9",
                           "description": "Privileged cloud service provider account holders have specific roles.",
                           "exportable": true
                         }
@@ -942,28 +942,28 @@
               ]
             },
             {
-              "uuid": "MSP94be64-1895-477e-ad07-da306649dd08",
+              "uuid": "MSPd636dd-96fc-4b41-9331-d089ff9e934d",
               "control-id": "ac-6.7",
               "statements": [
                 {
-                  "uuid": "MSPcf0597-beac-4fc3-8b3c-3ab48cd05941",
+                  "uuid": "MSP54d472-2e21-4c7b-989a-4322e905ae19",
                   "statement-id": "ac-6.7_smt.a",
                   "by-components": [
                     {
-                      "uuid": "MSP468569-d51d-4df5-acdc-490f299e429d",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSP2a6de6-3bf2-4435-bb2e-b1f877360676",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Cloud service provider system administrator privileges are reviewed every 30 days.",
                       "provided": [
                         {
-                          "uuid": "MSP401540-12e9-4849-a761-9604fbcc3df5",
-                          "description": "Cloud service provider system administrator privileges are reviewed within a specific time frame. (Random Content Follows) Reviewed provider within Cloud a service a privileges.",
+                          "uuid": "MSP222bca-6b03-4d75-b564-b55a5c8250e0",
+                          "description": "Cloud service provider system administrator privileges are reviewed within a specific time frame. (Random Content Follows) Frame. Cloud time reviewed reviewed provider within a reviewed a specific frame..",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSPe5e653-2c82-4575-8aac-5cd08216edb0",
-                          "provided-uuid": "MSP401540-12e9-4849-a761-9604fbcc3df5",
+                          "uuid": "MSPf4fd5c-af6b-4db7-bb99-14e2533713e2",
+                          "provided-uuid": "MSP222bca-6b03-4d75-b564-b55a5c8250e0",
                           "description": "System administrator privileges review time frame follows cloud service provider policy.",
                           "exportable": true
                         }
@@ -972,24 +972,24 @@
                   ]
                 },
                 {
-                  "uuid": "MSPcd096a-2d96-4f9b-86d1-34845d6e43a5",
+                  "uuid": "MSP56b46a-3f8d-401b-b0a2-86e42055f519",
                   "statement-id": "ac-6.7_smt.b",
                   "by-components": [
                     {
-                      "uuid": "MSP7441d9-5052-4c40-8076-d08e22430e93",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSP9d3b79-0ee8-4eb8-98a2-114122d5dca8",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Cloud service provider system administrator privileges are reassigned or removed, if necessary, to correctly reflect organizational mission and business needs.",
                       "provided": [
                         {
-                          "uuid": "MSP01d24b-4366-4cfd-8a30-c830938ca73f",
-                          "description": "System administrator privileges are modified to meet cloud service provider business needs. (Random Content Follows) Business administrator needs. needs. System needs. privileges needs. are privileges cloud.",
+                          "uuid": "MSPe3e3d6-28ac-45e2-a6e1-b50602dc6ce2",
+                          "description": "System administrator privileges are modified to meet cloud service provider business needs. (Random Content Follows) Provider needs. System business to business meet modified provider.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSP073e74-1660-4277-af20-5cbe0e50a96d",
-                          "provided-uuid": "MSP01d24b-4366-4cfd-8a30-c830938ca73f",
+                          "uuid": "MSPa712d8-33b0-4628-bd5c-7cd418b967a9",
+                          "provided-uuid": "MSPe3e3d6-28ac-45e2-a6e1-b50602dc6ce2",
                           "description": "Cloud service provider system administrator privileges are modified as needed.",
                           "exportable": true
                         }
@@ -1000,28 +1000,28 @@
               ]
             },
             {
-              "uuid": "MSP7ef24d-59c6-47d7-9d05-9bf966f5d114",
+              "uuid": "MSPfabde3-8365-4240-afc6-c76786188342",
               "control-id": "ac-6.9",
               "statements": [
                 {
-                  "uuid": "MSPe55215-51b8-4076-b1f9-edbffc986e0f",
+                  "uuid": "MSPacebb5-02c6-48b0-a2fe-da7b06909f87",
                   "statement-id": "ac-6.9",
                   "by-components": [
                     {
-                      "uuid": "MSP31d2b3-8278-4822-b516-ba4681f5ab6c",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSP69db5c-7996-4b5e-9152-55b9885c16f1",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Cloud service provider system administrator privileged functions are captured by the system audit logs.",
                       "provided": [
                         {
-                          "uuid": "MSP8630b4-ef18-4e90-a568-0aa0c08de782",
-                          "description": "System audit logs capture cloud service provider system administrator functions. (Random Content Follows) Capture System logs service logs cloud System service System logs system System.",
+                          "uuid": "MSPf55cd5-60bb-42e0-af27-f843ce131f21",
+                          "description": "System audit logs capture cloud service provider system administrator functions. (Random Content Follows) Audit System system audit audit cloud functions. System cloud cloud audit administrator audit.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSP1191bd-cbef-4b52-8704-bacbcc7c66b7",
-                          "provided-uuid": "MSP8630b4-ef18-4e90-a568-0aa0c08de782",
+                          "uuid": "MSPf4e966-1710-4d7b-96ce-a12503ee6bb1",
+                          "provided-uuid": "MSPf55cd5-60bb-42e0-af27-f843ce131f21",
                           "description": "System audit logs capture cloud service provider privileged functions.",
                           "exportable": true
                         }
@@ -1032,28 +1032,28 @@
               ]
             },
             {
-              "uuid": "MSP6ac5d5-92f8-480f-a538-e229f984348a",
+              "uuid": "MSP173cdb-a56e-4319-8682-18e09a55dd21",
               "control-id": "ac-7",
               "statements": [
                 {
-                  "uuid": "MSP49c147-6a39-487b-8627-57ba741b449d",
+                  "uuid": "MSP45174a-767b-4d3a-95a3-6e3a6917c2d0",
                   "statement-id": "ac-7_smt.a",
                   "by-components": [
                     {
-                      "uuid": "MSP67cc60-add0-47b9-abda-0c7812b6756b",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSP24a679-6935-4390-88bd-dd26efd41d58",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Cloud service provider system enforces 5 invalid login attempts within a 15 minute time period.",
                       "provided": [
                         {
-                          "uuid": "MSP99c204-f7c0-48c0-af36-1dc8f764dd49",
-                          "description": "Cloud service provider system enforces a specific number of invalid login attempts within a specific time frame. (Random Content Follows) Attempts number Cloud time invalid attempts specific login within.",
+                          "uuid": "MSP4c2735-f824-4df4-adcd-11d1b24369a3",
+                          "description": "Cloud service provider system enforces a specific number of invalid login attempts within a specific time frame. (Random Content Follows) Attempts invalid frame. system Cloud a login login provider provider number of.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSPf079c0-9388-4d5d-9db8-5e9461b9e9b6",
-                          "provided-uuid": "MSP99c204-f7c0-48c0-af36-1dc8f764dd49",
+                          "uuid": "MSP41d593-5532-4d8b-a1fa-afdb9145c065",
+                          "provided-uuid": "MSP4c2735-f824-4df4-adcd-11d1b24369a3",
                           "description": "Cloud service provider system enforces invalid login attempts within a time frame.",
                           "exportable": true
                         }
@@ -1062,24 +1062,24 @@
                   ]
                 },
                 {
-                  "uuid": "MSP7db412-6440-4af9-bd5b-568b32fbb051",
+                  "uuid": "MSPf78ba4-1417-4354-93f3-e625d6cd55a4",
                   "statement-id": "ac-7_smt.b",
                   "by-components": [
                     {
-                      "uuid": "MSP9cd84c-2d36-403b-a169-9cf1da43a4d0",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSPc378bc-a178-48c2-bf7c-558794c9d86c",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - When the user exceeds 5 invalid login attempts the cloud service provider user account or node is automatically locked for 60 minutes and the system administrator is notified. ",
                       "provided": [
                         {
-                          "uuid": "MSP222781-de36-49b8-a8aa-1c2e11b824ba",
-                          "description": "System locks the cloud service provider user account for a specific time frame and sends notification when the number of invalid login attempts exceed the threshold. (Random Content Follows) Cloud service invalid invalid time System of service threshold. provider sends of.",
+                          "uuid": "MSPa67bb3-805b-4967-821e-e1d0b0730a8b",
+                          "description": "System locks the cloud service provider user account for a specific time frame and sends notification when the number of invalid login attempts exceed the threshold. (Random Content Follows) Provider exceed time time time threshold. threshold. notification exceed and of.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSP262249-676d-49b5-955e-e78810de9e9b",
-                          "provided-uuid": "MSP222781-de36-49b8-a8aa-1c2e11b824ba",
+                          "uuid": "MSP1c2483-3328-4ae4-8dde-ae31b4ca8b46",
+                          "provided-uuid": "MSPa67bb3-805b-4967-821e-e1d0b0730a8b",
                           "description": "When the user exceeds the number of invalid login attempts allowed the account is locked for a specific time frame and a notification is sent.",
                           "exportable": true
                         }
@@ -1090,28 +1090,28 @@
               ]
             },
             {
-              "uuid": "MSP4fce24-9dbe-4a94-b5d5-a1c6956aebcb",
+              "uuid": "MSPf9e960-2f51-434f-9983-fb72ce658347",
               "control-id": "ac-8",
               "statements": [
                 {
-                  "uuid": "MSPfeec21-3d73-4500-a138-10eefd75795d",
+                  "uuid": "MSPed82bf-099e-495e-90c1-feff55bec970",
                   "statement-id": "ac-8_smt.a",
                   "by-components": [
                     {
-                      "uuid": "MSP4d06ea-b638-424e-9025-531d280e83c2",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSP7f71ee-47d8-4bd6-9d70-533cdbc7bbf6",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Cloud service provider system use notification is implemented at network, server, and application login. ",
                       "provided": [
                         {
-                          "uuid": "MSP47c2f3-2935-46b0-94e9-e983f93fa91d",
-                          "description": "System use notification has been implemented on cloud service provider systems inside the network. (Random Content Follows) System the the provider network. on notification network..",
+                          "uuid": "MSPb52f12-31fd-42b7-bb13-08b246032472",
+                          "description": "System use notification has been implemented on cloud service provider systems inside the network. (Random Content Follows) Implemented service use notification inside use notification notification cloud network. service.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSP1418af-7b05-433f-b148-ced6b394b85d",
-                          "provided-uuid": "MSP47c2f3-2935-46b0-94e9-e983f93fa91d",
+                          "uuid": "MSP1b001b-f500-4f22-80af-8f849fb01d20",
+                          "provided-uuid": "MSPb52f12-31fd-42b7-bb13-08b246032472",
                           "description": "System use notification has been implemented on cloud service provider systems.",
                           "exportable": true
                         }
@@ -1120,24 +1120,24 @@
                   ]
                 },
                 {
-                  "uuid": "MSP301167-a773-4608-af77-f6a85a4495a3",
+                  "uuid": "MSPadef54-94ee-4721-b9bc-2ad1c5887460",
                   "statement-id": "ac-8_smt.b",
                   "by-components": [
                     {
-                      "uuid": "MSPee893d-9a93-40bf-9da8-cb89e7044837",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSPc3923e-1a7a-4ff6-9ebf-03006054aed1",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Cloud service provider system use notification is visible until the user logs in.",
                       "provided": [
                         {
-                          "uuid": "MSP4848cf-978a-4186-ab64-1e54e59472c1",
-                          "description": "System use notification is visible to the cloud service provider user until they log in. (Random Content Follows) The System System to in. in. use.",
+                          "uuid": "MSP9d23fa-d2a0-4bc7-b715-dc976f52d7be",
+                          "description": "System use notification is visible to the cloud service provider user until they log in. (Random Content Follows) In. to provider user provider they visible.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSP2982c5-5834-4f5e-ad76-43dd83208088",
-                          "provided-uuid": "MSP4848cf-978a-4186-ab64-1e54e59472c1",
+                          "uuid": "MSPaf63f3-2346-4b67-85f1-d91e5a425193",
+                          "provided-uuid": "MSP9d23fa-d2a0-4bc7-b715-dc976f52d7be",
                           "description": "System use notification has been implemented by the cloud service provider.",
                           "exportable": true
                         }
@@ -1146,24 +1146,24 @@
                   ]
                 },
                 {
-                  "uuid": "MSP26b875-ee23-4bdc-8591-05c79bef1bcc",
+                  "uuid": "MSPe46ad7-786c-4fe8-a83b-f2f7468b6b3c",
                   "statement-id": "ac-8_smt.c",
                   "by-components": [
                     {
-                      "uuid": "MSP2cab1b-2297-4c14-80ed-e376a15ddbd9",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSPf982ac-ac31-4e43-92fb-fbf58a13b14d",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Cloud service provider, for public systems, will display the system use notification before granting access to the system. The system use notification  will include a description of the authorized use of the system.",
                       "provided": [
                         {
-                          "uuid": "MSPfff08e-f4c7-4292-a62e-94fe39d8cdd5",
-                          "description": "For public systems the cloud service provider will display the system use notification prior to allowing access. The notification will describe the authorized use of the system. (Random Content Follows) Provider to For the the the authorized authorized access..",
+                          "uuid": "MSPfb3a64-9ecf-4b87-b243-0a8479e02634",
+                          "description": "For public systems the cloud service provider will display the system use notification prior to allowing access. The notification will describe the authorized use of the system. (Random Content Follows) For notification notification the of public to.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSP2a5d49-0ac4-4afe-8c51-f15484719963",
-                          "provided-uuid": "MSPfff08e-f4c7-4292-a62e-94fe39d8cdd5",
+                          "uuid": "MSP0fcfc1-6469-42af-9c51-0b4d961c2cb4",
+                          "provided-uuid": "MSPfb3a64-9ecf-4b87-b243-0a8479e02634",
                           "description": "For public systems the cloud service provider system use notification describing the use of the system will be displayed ",
                           "exportable": true
                         }
@@ -1174,28 +1174,28 @@
               ]
             },
             {
-              "uuid": "MSP202bda-d85e-403f-95f3-657b94a19f71",
+              "uuid": "MSPe06e85-4b00-4c47-8c37-8bf3e8388255",
               "control-id": "au-12",
               "statements": [
                 {
-                  "uuid": "MSP083dfe-b9d6-4a57-a453-202750698368",
+                  "uuid": "MSP350cd5-5f60-4fff-8cc1-426023e162d4",
                   "statement-id": "au-12_smt.a",
                   "by-components": [
                     {
-                      "uuid": "MSP170277-1af3-4714-b077-780fe81fc8f3",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSP26dbad-430e-497f-8504-9f840679611e",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Audit records can be generated for cloud service provider system audit logs that capture system access, system accounts, system configuration changes, and file change events on all system components.",
                       "provided": [
                         {
-                          "uuid": "MSP9cfbf3-97a1-46a3-a094-3dee0cfd66d7",
-                          "description": "System audit log records can be generated for specific cloud service provider events captured by the audit logs. (Random Content Follows) Events generated cloud can for audit logs. be audit generated.",
+                          "uuid": "MSP556d18-26b0-4428-8c4f-ac04234ef945",
+                          "description": "System audit log records can be generated for specific cloud service provider events captured by the audit logs. (Random Content Follows) Audit log specific provider can cloud logs. can cloud log.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSPdedb32-aaaf-4f68-b4bc-e3ac54403fa2",
-                          "provided-uuid": "MSP9cfbf3-97a1-46a3-a094-3dee0cfd66d7",
+                          "uuid": "MSPa61ea3-c79e-47f0-8f61-d61b3271909e",
+                          "provided-uuid": "MSP556d18-26b0-4428-8c4f-ac04234ef945",
                           "description": "Audit records can be generated for events captured by the cloud service provider system audit logs.",
                           "exportable": true
                         }
@@ -1204,24 +1204,24 @@
                   ]
                 },
                 {
-                  "uuid": "MSPf1c92d-203b-4244-bed1-90a5f8c1c7b2",
+                  "uuid": "MSPdad753-b47a-46ed-8716-90519db23eb7",
                   "statement-id": "au-12_smt.b",
                   "by-components": [
                     {
-                      "uuid": "MSP0e08e9-4aaa-4146-970b-50845956bf35",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSP3c6b7f-ace0-45b5-b8a6-a9ff50f1c2c5",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Cloud service provider system administrators are allowed to select event types that are to be logged by all components of the system.",
                       "provided": [
                         {
-                          "uuid": "MSP07cc70-f8d6-4cc2-8521-9f67f9f3a606",
-                          "description": "System administrators select cloud service provider event types to be logged by the system. (Random Content Follows) To system. provider logged by logged cloud System.",
+                          "uuid": "MSP929da3-10ec-4a1b-ac73-35b1278b3ed4",
+                          "description": "System administrators select cloud service provider event types to be logged by the system. (Random Content Follows) To administrators cloud event system. system..",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSP11336d-b467-46f4-8d62-41835ab650fe",
-                          "provided-uuid": "MSP07cc70-f8d6-4cc2-8521-9f67f9f3a606",
+                          "uuid": "MSP106452-0f58-457d-bc99-6369e426e863",
+                          "provided-uuid": "MSP929da3-10ec-4a1b-ac73-35b1278b3ed4",
                           "description": "System administrators select cloud service provider system event types to be logged.",
                           "exportable": true
                         }
@@ -1230,24 +1230,24 @@
                   ]
                 },
                 {
-                  "uuid": "MSPf87062-19d0-4d87-8187-7de28b285736",
+                  "uuid": "MSPf3f240-5184-4a50-b815-b844b73b6010",
                   "statement-id": "au-12_smt.c",
                   "by-components": [
                     {
-                      "uuid": "MSP7cfb7a-04bc-4571-86cc-ff07892eef76",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSPdbb362-9b0a-45b1-b08f-ea79cdc54542",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Cloud service provider system audit logs are generated for logon and log off; invalid login attempts; account creation, deletion, and modification; system configuration changes; and stored file change events. System audit logs also contain information on the type of event occurred, when and where event occurred, source of the event, outcome of the event, and any user associated with the event.",
                       "provided": [
                         {
-                          "uuid": "MSPeb15af-20b7-443d-a00d-e2846ce1c7a5",
-                          "description": "System audit logs are generated for cloud service provider specific system events and event information. (Random Content Follows) Provider System for and provider logs logs generated and system system.",
+                          "uuid": "MSPeef44d-fc8c-40a7-aeea-81af355f23f1",
+                          "description": "System audit logs are generated for cloud service provider specific system events and event information. (Random Content Follows) Provider system service provider and information. are provider service specific events service.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSP6dff94-9d3c-4772-aa39-cb8edd3c3411",
-                          "provided-uuid": "MSPeb15af-20b7-443d-a00d-e2846ce1c7a5",
+                          "uuid": "MSP20315d-b950-4d00-8c5a-09b76b2e0589",
+                          "provided-uuid": "MSPeef44d-fc8c-40a7-aeea-81af355f23f1",
                           "description": "System audit logs are generated for select cloud service provider system events.",
                           "exportable": true
                         }
@@ -1258,28 +1258,28 @@
               ]
             },
             {
-              "uuid": "MSPe54023-17dd-45fd-a7ee-3d8260744893",
+              "uuid": "MSPa4c5b9-9fcd-44f6-92b7-532b6cdd481e",
               "control-id": "au-2",
               "statements": [
                 {
-                  "uuid": "MSPa037a6-aba0-4c9b-9193-4460c925d730",
+                  "uuid": "MSPf30edf-e0c9-4bf6-8901-e91666923b6c",
                   "statement-id": "au-2_smt.a",
                   "by-components": [
                     {
-                      "uuid": "MSP1c81ea-0421-4ae1-9974-8b2331505769",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSPa7d5e7-42d5-4456-b4f2-070da3296acc",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Cloud system provider system audit logs capture system access, system accounts, system configuration changes, and file change events.",
                       "provided": [
                         {
-                          "uuid": "MSP490be8-c014-40bc-b5ee-6fdbad63a3d0",
-                          "description": "System audit logs capture specific cloud service provider auditable events. (Random Content Follows) Events. logs specific cloud logs capture System System.",
+                          "uuid": "MSP0e0aaf-a041-4c8d-b777-c32c5add833d",
+                          "description": "System audit logs capture specific cloud service provider auditable events. (Random Content Follows) Capture capture events. capture events. events. System auditable service cloud logs capture provider.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSPe88b84-5376-42c3-802b-cbbd05a58076",
-                          "provided-uuid": "MSP490be8-c014-40bc-b5ee-6fdbad63a3d0",
+                          "uuid": "MSP1b2d1d-5ea8-4a1d-8cbb-96f5aa23526d",
+                          "provided-uuid": "MSP0e0aaf-a041-4c8d-b777-c32c5add833d",
                           "description": "Audit logs record required cloud service provider auditable events.",
                           "exportable": true
                         }
@@ -1288,24 +1288,24 @@
                   ]
                 },
                 {
-                  "uuid": "MSP8d332d-5bbd-4de1-8eb2-d242df99fb13",
+                  "uuid": "MSPc38885-360c-4058-bb61-5912f6b96dba",
                   "statement-id": "au-2_smt.b",
                   "by-components": [
                     {
-                      "uuid": "MSPeabc17-cb7c-4c07-ba7f-477037ca93ea",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSP3bd8ff-fa67-4474-8359-84bb2ad75de0",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Cloud system provider system auditable events are coordinated with Office of Information Security.",
                       "provided": [
                         {
-                          "uuid": "MSP7892a9-03d5-4977-8266-43105ae1e756",
-                          "description": "Auditable cloud service provider events are synchronized with the IT security office. (Random Content Follows) Synchronized are office. the synchronized the service synchronized synchronized events with provider the.",
+                          "uuid": "MSPd8f597-151b-4784-a65c-c1818e369068",
+                          "description": "Auditable cloud service provider events are synchronized with the IT security office. (Random Content Follows) Auditable security cloud synchronized are security with.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSPc5d1f7-24b8-4cfe-80f8-5f23e119a689",
-                          "provided-uuid": "MSP7892a9-03d5-4977-8266-43105ae1e756",
+                          "uuid": "MSPf75250-a0fb-4911-8a1e-d7618a110694",
+                          "provided-uuid": "MSPd8f597-151b-4784-a65c-c1818e369068",
                           "description": "Auditable cloud service provider events are reviewed by the IT security office.",
                           "exportable": true
                         }
@@ -1314,24 +1314,24 @@
                   ]
                 },
                 {
-                  "uuid": "MSP714e8e-6ceb-4a38-993d-9d4ab0f29e11",
+                  "uuid": "MSPe230a5-1a33-4036-9b43-afe790db9e72",
                   "statement-id": "au-2_smt.c",
                   "by-components": [
                     {
-                      "uuid": "MSPcbdaea-8128-4241-a80e-23bb64c1fe3b",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSP5c1e68-0b8a-4d6b-9bcb-690c9b04b858",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Cloud system provider system logon and log off; invalid login attempts; account creation, deletion, and modification; system configuration changes; and stored file change events are logged when they occur.      \n             ",
                       "provided": [
                         {
-                          "uuid": "MSP6ac61a-5838-435b-af0f-31d883157ed4",
-                          "description": "System logs specific cloud service provider events when they occur. (Random Content Follows) Events they they when when service provider System logs when.",
+                          "uuid": "MSPaf47f9-4bc3-4943-a6d5-0ad94e0ed561",
+                          "description": "System logs specific cloud service provider events when they occur. (Random Content Follows) Logs events specific specific they service logs they.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSPf6ac0c-1d53-450b-b554-1f94ebe994a3",
-                          "provided-uuid": "MSP6ac61a-5838-435b-af0f-31d883157ed4",
+                          "uuid": "MSP32f98f-a183-4c1e-83f0-81a5bdf05ae1",
+                          "provided-uuid": "MSPaf47f9-4bc3-4943-a6d5-0ad94e0ed561",
                           "description": "System logs specific cloud service provider events in real time.",
                           "exportable": true
                         }
@@ -1340,24 +1340,24 @@
                   ]
                 },
                 {
-                  "uuid": "MSP9a6233-0b86-4aae-b3da-2a90c91b081e",
+                  "uuid": "MSP481017-2923-4cce-85ce-91de4593a6d8",
                   "statement-id": "au-2_smt.d",
                   "by-components": [
                     {
-                      "uuid": "MSP42220a-92a2-4b02-ba5d-8f6737699af1",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSPc39a14-3c38-4f7a-81b3-5dd8b03c1032",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Cloud system provider rationale for selecting specific auditable events to be logged is documented in the SSP.",
                       "provided": [
                         {
-                          "uuid": "MSP10a69f-2967-49f1-8e9b-5fa64d524866",
-                          "description": "Justification for selecting specific cloud service provider auditable events to be logged is documented in the system security plan. (Random Content Follows) Documented selecting be in auditable is to documented logged plan. service Justification auditable.",
+                          "uuid": "MSPe2095b-d08c-4a70-bbe0-452ec6c12afc",
+                          "description": "Justification for selecting specific cloud service provider auditable events to be logged is documented in the system security plan. (Random Content Follows) The plan. logged security system to for the cloud.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSP0bd66c-9167-417c-b541-cdd273407cce",
-                          "provided-uuid": "MSP10a69f-2967-49f1-8e9b-5fa64d524866",
+                          "uuid": "MSPc58d86-2129-4cc9-bc95-db4262aacc3d",
+                          "provided-uuid": "MSPe2095b-d08c-4a70-bbe0-452ec6c12afc",
                           "description": "Reason for selecting specific cloud service provider auditable events is documented.",
                           "exportable": true
                         }
@@ -1366,24 +1366,24 @@
                   ]
                 },
                 {
-                  "uuid": "MSP70d42c-7e54-4c6c-99ac-c36744f48b71",
+                  "uuid": "MSP5c693d-affb-41e3-aa41-99cd72de4b1e",
                   "statement-id": "au-2_smt.e",
                   "by-components": [
                     {
-                      "uuid": "MSP43d3dd-e4f9-49c8-9e89-e86d71966e89",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSPa53236-b00c-4672-9f4d-be6ceee40afa",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Cloud system provider system auditable events are reviewed and updated annually. ",
                       "provided": [
                         {
-                          "uuid": "MSP9699f4-83fd-4ce5-a6b2-9ec9ec9a050e",
-                          "description": "Cloud system auditable events are reviewed and updated at a specific time frame. (Random Content Follows) Events updated time system auditable and.",
+                          "uuid": "MSP05f4df-a431-4fa8-8da1-dcd3959370ea",
+                          "description": "Cloud system auditable events are reviewed and updated at a specific time frame. (Random Content Follows) Reviewed reviewed Cloud system system frame. events updated system frame. auditable and.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSPcccc0c-382c-46c2-84dc-55a4e5e360c3",
-                          "provided-uuid": "MSP9699f4-83fd-4ce5-a6b2-9ec9ec9a050e",
+                          "uuid": "MSPbcb3b9-8ac3-496a-b5a9-a8fbddad312c",
+                          "provided-uuid": "MSP05f4df-a431-4fa8-8da1-dcd3959370ea",
                           "description": "System auditable cloud service provider events are reviewed and updated.",
                           "exportable": true
                         }
@@ -1394,28 +1394,28 @@
               ]
             },
             {
-              "uuid": "MSPbb75fe-0558-4860-97a9-39d501bfe559",
+              "uuid": "MSPe375d8-229c-447f-8dbd-96bbf73cc649",
               "control-id": "au-3",
               "statements": [
                 {
-                  "uuid": "MSP215229-ff9a-48ee-91d7-5eff44b2e238",
+                  "uuid": "MSP4d6554-eccd-4abd-a8ea-b1e653a58202",
                   "statement-id": "au-3",
                   "by-components": [
                     {
-                      "uuid": "MSPf848f1-ca79-4d09-85eb-0236b92be305",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSP690c58-f212-4b6c-bdf8-295833e04129",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Cloud system provider system audit logs contain type of event occurred, when and where event occurred, source of the event, outcome of the event, and any user associated with the event.",
                       "provided": [
                         {
-                          "uuid": "MSP7a34dc-f24a-49a6-9dce-d822344cb22d",
-                          "description": "System audit logs contain more detailed cloud service provider event information. (Random Content Follows) Service audit information. provider detailed provider event detailed contain logs.",
+                          "uuid": "MSP25b961-87be-4953-8b0c-281dec1ee12d",
+                          "description": "System audit logs contain more detailed cloud service provider event information. (Random Content Follows) Contain logs audit logs logs System detailed detailed contain service.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSP62a270-7740-4fae-a48d-0bf53b42e71c",
-                          "provided-uuid": "MSP7a34dc-f24a-49a6-9dce-d822344cb22d",
+                          "uuid": "MSP108902-0533-4dd5-b2fe-f1a07bdd2328",
+                          "provided-uuid": "MSP25b961-87be-4953-8b0c-281dec1ee12d",
                           "description": "System audit logs contain specific cloud service provider event information.",
                           "exportable": true
                         }
@@ -1426,28 +1426,28 @@
               ]
             },
             {
-              "uuid": "MSPed36a5-0202-4254-a97d-58b9ee4a9b4c",
+              "uuid": "MSPf9f368-ebd7-4746-aa78-4802fce106b9",
               "control-id": "au-3.1",
               "statements": [
                 {
-                  "uuid": "MSP7e54c1-9e31-4455-8773-556e068d9508",
+                  "uuid": "MSP7da42d-a772-44fd-8ba5-17d900779d18",
                   "statement-id": "au-3.1",
                   "by-components": [
                     {
-                      "uuid": "MSP84d24d-aee4-45ab-a560-b3d958cf718a",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSP0b3339-dd51-4ce8-961c-638a3c240d1e",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Cloud service provider system audit logs contain user IP address and file location information.",
                       "provided": [
                         {
-                          "uuid": "MSP114695-d621-4ccf-8fba-8fcc8fb4d6ea",
-                          "description": "Cloud system provider audit logs contain user and file information. (Random Content Follows) System audit logs Cloud information. provider and file audit.",
+                          "uuid": "MSP0e224a-f9f3-4067-a337-432e89c41f74",
+                          "description": "Cloud system provider audit logs contain user and file information. (Random Content Follows) Cloud logs Cloud provider audit and logs user information..",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSPcce92f-33d0-494a-b9f5-23cf42ea146b",
-                          "provided-uuid": "MSP114695-d621-4ccf-8fba-8fcc8fb4d6ea",
+                          "uuid": "MSPd2cca7-83db-4118-9c5b-c5aafe3eb063",
+                          "provided-uuid": "MSP0e224a-f9f3-4067-a337-432e89c41f74",
                           "description": "System audit logs contain cloud service provider specific information.",
                           "exportable": true
                         }
@@ -1458,28 +1458,28 @@
               ]
             },
             {
-              "uuid": "MSP248325-26ab-4030-9c20-b6570b178a28",
+              "uuid": "MSP3096d2-0f16-42bb-8690-a36698e1af1d",
               "control-id": "ia-2",
               "statements": [
                 {
-                  "uuid": "MSP92a1ea-8d44-40cc-9792-ecffbd8dde88",
+                  "uuid": "MSP774b8a-dcec-48f8-a725-7e87f4b18ef3",
                   "statement-id": "ia-2",
                   "by-components": [
                     {
-                      "uuid": "MSPafc05a-ade5-4a7d-bead-ee5b17fd210c",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSP260938-5666-4938-82f2-eda9792d7eee",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Cloud service provider will employ PIV cards to identify and authenticate users.",
                       "provided": [
                         {
-                          "uuid": "MSPf20156-5850-472a-9c81-723c6dda9c63",
-                          "description": "PIV cards are employed for identifying and authenticating cloud service provider users. (Random Content Follows) Users. identifying cards and identifying are service authenticating authenticating employed and users..",
+                          "uuid": "MSP6f4003-12b4-42ea-b3cb-4ea39f5f838b",
+                          "description": "PIV cards are employed for identifying and authenticating cloud service provider users. (Random Content Follows) Service and PIV for service cards are.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSP319a9d-4040-4702-8034-1b7727db003b",
-                          "provided-uuid": "MSPf20156-5850-472a-9c81-723c6dda9c63",
+                          "uuid": "MSP5eff2a-9cbc-4cb0-addd-14d87539361e",
+                          "provided-uuid": "MSP6f4003-12b4-42ea-b3cb-4ea39f5f838b",
                           "description": "PIV cards are employed for cloud service provider user identification and authentication.",
                           "exportable": true
                         }
@@ -1490,28 +1490,28 @@
               ]
             },
             {
-              "uuid": "MSP1a08ef-18ee-4580-8de3-0bed0cfdcfde",
+              "uuid": "MSP8695f1-04a1-4801-b5c3-2a4adb7c7e3a",
               "control-id": "ia-2.1",
               "statements": [
                 {
-                  "uuid": "MSP2fd33d-7eda-4d72-9bc6-60afb1a3ab63",
+                  "uuid": "MSPeab9a4-50f8-40c6-9323-ca31625646bf",
                   "statement-id": "ia-2.1",
                   "by-components": [
                     {
-                      "uuid": "MSPe28bb3-ca1d-4918-b426-e3d812c688d9",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSP0f7eb4-782b-45a3-a03f-389728f065cc",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Cloud service provider employs PIV cards for access to privileged accounts.",
                       "provided": [
                         {
-                          "uuid": "MSP9d16a4-ced1-432c-a531-39a0a0e37047",
-                          "description": "PIV cards are required for cloud service provider privileged account access. (Random Content Follows) Privileged are required cards privileged service privileged are cards cards account privileged provider.",
+                          "uuid": "MSP63e12b-a843-4ce2-be8e-f5fac41a23f0",
+                          "description": "PIV cards are required for cloud service provider privileged account access. (Random Content Follows) For service privileged service PIV for access..",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSPe505f4-1693-46e8-b1e6-74cb1c9b5d60",
-                          "provided-uuid": "MSP9d16a4-ced1-432c-a531-39a0a0e37047",
+                          "uuid": "MSP971896-a4bc-4815-aef6-7e8c6c1e1c26",
+                          "provided-uuid": "MSP63e12b-a843-4ce2-be8e-f5fac41a23f0",
                           "description": "PIV cards are implemented for cloud service provider privileged account access.",
                           "exportable": true
                         }
@@ -1522,28 +1522,28 @@
               ]
             },
             {
-              "uuid": "MSPed3439-b3e1-4335-bdaf-cbeee9c4ee50",
+              "uuid": "MSP5d99c3-56e0-47b5-9306-fd22948f3346",
               "control-id": "ia-2.12",
               "statements": [
                 {
-                  "uuid": "MSPa55f5d-2da0-4a67-9ae8-7aa0115ebc86",
+                  "uuid": "MSPf0a82f-d03c-4504-a00a-18c25cef26e2",
                   "statement-id": "ia-2.12",
                   "by-components": [
                     {
-                      "uuid": "MSP1c115b-cedf-4ebd-8e68-9b01f8d8839b",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSP5356a7-16f8-40ac-883b-af9953a096bd",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Cloud service provider accepts and electronically verifies PIV cards .",
                       "provided": [
                         {
-                          "uuid": "MSPdd6db7-643d-4f1f-a4ab-0668571b12b8",
-                          "description": "PIV cards are accepted and verified by the cloud service provider. (Random Content Follows) Cloud the the the are cloud are the PIV service provider. accepted.",
+                          "uuid": "MSPb01fa0-4300-4d8b-a0e7-b13bb9793dba",
+                          "description": "PIV cards are accepted and verified by the cloud service provider. (Random Content Follows) Are are cloud verified provider. verified by.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSP2389e4-a7aa-48f9-850f-9c8f983427e7",
-                          "provided-uuid": "MSPdd6db7-643d-4f1f-a4ab-0668571b12b8",
+                          "uuid": "MSPfcbc0c-c7be-4f84-8134-7419abbe1fce",
+                          "provided-uuid": "MSPb01fa0-4300-4d8b-a0e7-b13bb9793dba",
                           "description": "PIV cards are accepted and confirmed by the cloud service provider.",
                           "exportable": true
                         }
@@ -1554,28 +1554,28 @@
               ]
             },
             {
-              "uuid": "MSP33e09f-6c60-4279-8b3f-abfb236b3d72",
+              "uuid": "MSPfbacd2-9e75-448b-b8f4-df3beb30aa3b",
               "control-id": "ia-2.2",
               "statements": [
                 {
-                  "uuid": "MSP006d5a-e4ee-41eb-85e6-fd15cbb13165",
+                  "uuid": "MSP26c7e1-cd74-4b79-bc00-182a87ef9dab",
                   "statement-id": "ia-2.2",
                   "by-components": [
                     {
-                      "uuid": "MSP158d5c-e767-43f9-b7f0-70e88a3d1e87",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSP0081c0-30c3-483f-b5e1-34fa88ba54d6",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Cloud service provider employs PIV cards for access to non-privileged accounts.",
                       "provided": [
                         {
-                          "uuid": "MSP116298-c8b0-4da4-be0e-8b1d0d695090",
-                          "description": "PIV cards are required for cloud service provider non-privileged account access. (Random Content Follows) Access. required cards cloud provider provider access. cards for access. required account account.",
+                          "uuid": "MSP9b71e0-47a5-45cc-9dea-a8a7dbb819a6",
+                          "description": "PIV cards are required for cloud service provider non-privileged account access. (Random Content Follows) Required for provider required are account service access. required access. non-privileged.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSPed7367-cd0b-475a-ab10-d4e41f0016ed",
-                          "provided-uuid": "MSP116298-c8b0-4da4-be0e-8b1d0d695090",
+                          "uuid": "MSP202595-677f-4811-9a89-0a0a28eed21d",
+                          "provided-uuid": "MSP9b71e0-47a5-45cc-9dea-a8a7dbb819a6",
                           "description": "PIV cards are implemented for cloud service provider non-privileged account access.",
                           "exportable": true
                         }
@@ -1586,28 +1586,28 @@
               ]
             },
             {
-              "uuid": "MSPd2c26e-475a-4c0e-a503-996967724270",
+              "uuid": "MSP541497-1532-4f63-bb48-92bfe609b09a",
               "control-id": "ia-2.8",
               "statements": [
                 {
-                  "uuid": "MSP2e54f0-f5e7-486c-a49f-249107befdab",
+                  "uuid": "MSP059e6b-9021-4bc1-96ca-093f76e1b925",
                   "statement-id": "ia-2.8",
                   "by-components": [
                     {
-                      "uuid": "MSPa4baba-710f-46a1-898a-7ef11d739579",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSP705320-c7c8-4e2d-9fcb-9efc67317a0b",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Cloud service provider employs replay-resistant authentication mechanisms for access to privileged and non-privileged accounts. ",
                       "provided": [
                         {
-                          "uuid": "MSP3d12f9-64b8-4e2e-b5bd-399d3da5de5b",
-                          "description": "Replay-resistant authentication mechanisms are required for cloud service provider privileged and non-privileged account access. (Random Content Follows) Are are Replay-resistant authentication account access. access. access. provider for privileged and required authentication.",
+                          "uuid": "MSP9c0f26-a618-4d88-8a87-7e4423a9c27f",
+                          "description": "Replay-resistant authentication mechanisms are required for cloud service provider privileged and non-privileged account access. (Random Content Follows) Non-Privileged privileged access. Replay-resistant are access. privileged for account.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSPadcc67-3d4a-4b17-9add-a631e88fa4ab",
-                          "provided-uuid": "MSP3d12f9-64b8-4e2e-b5bd-399d3da5de5b",
+                          "uuid": "MSP28aee4-f130-44b7-bae9-2efc5643712e",
+                          "provided-uuid": "MSP9c0f26-a618-4d88-8a87-7e4423a9c27f",
                           "description": "Replay-resistant authentication mechanisms are required for cloud service provider account access.",
                           "exportable": true
                         }
@@ -1618,28 +1618,28 @@
               ]
             },
             {
-              "uuid": "MSPd06ac8-f14b-4fcc-af8e-0974c5723036",
+              "uuid": "MSP435da8-c53a-4b68-a937-7c396d6e1b85",
               "control-id": "ra-5",
               "statements": [
                 {
-                  "uuid": "MSPa0e609-2f1e-49f4-a609-fdc6537df829",
+                  "uuid": "MSP4a7583-84a1-4a02-9c6d-392565fe6c53",
                   "statement-id": "ra-5_smt.a",
                   "by-components": [
                     {
-                      "uuid": "MSPeabf8a-7bb7-4629-af67-82f4f1349270",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSP5df300-fac5-4cf4-b864-2aa71117c002",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Cloud service provider system vulnerability scans are conducted monthly or when new moderate or high vulnerabilities are identified and reported by vendor.",
                       "provided": [
                         {
-                          "uuid": "MSP5fe596-7ae3-4b75-843e-d40630a47df7",
-                          "description": "Vulnerability scans on cloud service provider systems are conducted during a specific time frame or when new vulnerabilities are identified. (Random Content Follows) Are time scans vulnerabilities scans are service conducted.",
+                          "uuid": "MSP426170-24c4-4f91-8f70-94516f50ff8e",
+                          "description": "Vulnerability scans on cloud service provider systems are conducted during a specific time frame or when new vulnerabilities are identified. (Random Content Follows) Systems service specific cloud on during vulnerabilities service or during time conducted scans.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSPbe497c-2db0-48e3-a7fc-b562fa8c6bfc",
-                          "provided-uuid": "MSP5fe596-7ae3-4b75-843e-d40630a47df7",
+                          "uuid": "MSP4d407e-e4c3-41f2-b065-e869caae2f22",
+                          "provided-uuid": "MSP426170-24c4-4f91-8f70-94516f50ff8e",
                           "description": "System vulnerability scans are conducted by the cloud service provider on a timely fashion or when new vulnerabilities are identified.",
                           "exportable": true
                         }
@@ -1648,24 +1648,24 @@
                   ]
                 },
                 {
-                  "uuid": "MSP1ea091-83d7-441f-980c-4cb5d736040a",
+                  "uuid": "MSP75a0cb-0922-439f-b717-8d1103e9d73e",
                   "statement-id": "ra-5_smt.b",
                   "by-components": [
                     {
-                      "uuid": "MSPbbaf96-919c-4218-bcff-42ac7cb4d081",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSP7854d1-5873-4185-b049-161b95b58fa1",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Cloud service provider system vulnerabilities are identified using the Common Vulnerabilities and Exposures (CVE) naming convention.",
                       "provided": [
                         {
-                          "uuid": "MSP831a2f-9822-4057-8526-eb180d34ff09",
-                          "description": "Unique IDs are used to identify cloud service provider system vulnerabilities. (Random Content Follows) Cloud Unique vulnerabilities. provider provider to provider vulnerabilities. are identify to system.",
+                          "uuid": "MSP0e79b0-c7af-4a51-a16f-ea1366acccac",
+                          "description": "Unique IDs are used to identify cloud service provider system vulnerabilities. (Random Content Follows) Service to provider to service identify to to identify.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSP7703a7-eec4-4cdc-997a-a02345295999",
-                          "provided-uuid": "MSP831a2f-9822-4057-8526-eb180d34ff09",
+                          "uuid": "MSPc9b532-55e8-454a-9c10-e68cea85870b",
+                          "provided-uuid": "MSP0e79b0-c7af-4a51-a16f-ea1366acccac",
                           "description": "Standard vulnerability naming conventions are used to identify cloud service provider system vulnerabilities.",
                           "exportable": true
                         }
@@ -1674,24 +1674,24 @@
                   ]
                 },
                 {
-                  "uuid": "MSPfc7f0c-1f85-4643-b9c4-c4becdb76d6d",
+                  "uuid": "MSP8fd95e-ed2e-4052-8f4c-fa14505cd4b2",
                   "statement-id": "ra-5_smt.c",
                   "by-components": [
                     {
-                      "uuid": "MSP7e575e-dbe8-43c3-9b12-2070601b436f",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSP182f68-8516-49a0-b306-351466561c1a",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Cloud service provider system vulnerability scan results are analyzed by the Security Operations Center and the applicable results are provided to the ISSO for remediation.",
                       "provided": [
                         {
-                          "uuid": "MSP684de3-2507-4af8-a759-cb368233d578",
-                          "description": "Vulnerability scans conducted on cloud service provider systems are analyzed and the results are provided to appropriate personnel. (Random Content Follows) Service are provider results on cloud are.",
+                          "uuid": "MSP2b03fc-7bf2-4e5d-8779-38ca036a15fe",
+                          "description": "Vulnerability scans conducted on cloud service provider systems are analyzed and the results are provided to appropriate personnel. (Random Content Follows) Systems the Vulnerability on the personnel. provided the conducted analyzed.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSPf86f06-5960-4476-9c63-5801f5702cfe",
-                          "provided-uuid": "MSP684de3-2507-4af8-a759-cb368233d578",
+                          "uuid": "MSP5ee1f8-51ab-44c8-ba5a-eb3a03d8e476",
+                          "provided-uuid": "MSP2b03fc-7bf2-4e5d-8779-38ca036a15fe",
                           "description": "Vulnerability scan results on cloud service provider systems are analyzed and reported.",
                           "exportable": true
                         }
@@ -1700,24 +1700,24 @@
                   ]
                 },
                 {
-                  "uuid": "MSP0227f6-e9a7-4ae3-ab13-f2534a2df7c1",
+                  "uuid": "MSP7a0824-23ed-4a2a-90ca-c294ef816b2a",
                   "statement-id": "ra-5_smt.d",
                   "by-components": [
                     {
-                      "uuid": "MSPc2c032-e0a5-419e-a5d6-41be37e34c77",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSPcaf188-a092-465c-a571-1f8380060b23",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Cloud service provider system vulnerabilities are remediated within 1 week for HIGH, 30 days for MODERATE, and 90 days for LOW.",
                       "provided": [
                         {
-                          "uuid": "MSP4db0ef-2998-4ae3-bcbb-34c548fe8054",
-                          "description": "Vulnerabilities on cloud service provider systems are remediated within a specific time frame. (Random Content Follows) A cloud within time Vulnerabilities specific systems provider are frame. a.",
+                          "uuid": "MSP656da2-f25b-4035-aea0-a23424c9205c",
+                          "description": "Vulnerabilities on cloud service provider systems are remediated within a specific time frame. (Random Content Follows) Systems systems specific within within time service service systems a Vulnerabilities.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSPf7b8a1-a660-4236-943e-8fcad440894e",
-                          "provided-uuid": "MSP4db0ef-2998-4ae3-bcbb-34c548fe8054",
+                          "uuid": "MSPdd211e-e330-49b1-a1fe-a45ed7b38bed",
+                          "provided-uuid": "MSP656da2-f25b-4035-aea0-a23424c9205c",
                           "description": "Vulnerabilities identified by cloud service provider system scans are remediated per policy.",
                           "exportable": true
                         }
@@ -1726,24 +1726,24 @@
                   ]
                 },
                 {
-                  "uuid": "MSPb22ac1-ca39-41ed-8358-ec2a6f739558",
+                  "uuid": "MSP97777f-acd3-45ee-9428-0ebea6edf7b2",
                   "statement-id": "ra-5_smt.e",
                   "by-components": [
                     {
-                      "uuid": "MSP15488b-fd2c-49fb-98be-e703c496e71f",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSP6835ce-b743-4d89-ba47-971627a473e9",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Cloud service provider system vulnerability scan results are provided to system security officer.",
                       "provided": [
                         {
-                          "uuid": "MSP886eb2-4b23-4673-9e5c-e0e56e87caef",
-                          "description": "Vulnerability scan results on cloud service provider systems are reported to appropriate personnel. (Random Content Follows) Personnel. personnel. results scan to on systems to scan reported.",
+                          "uuid": "MSP662d00-4ee5-49ac-a591-2241a03c50ab",
+                          "description": "Vulnerability scan results on cloud service provider systems are reported to appropriate personnel. (Random Content Follows) Provider systems cloud are personnel. cloud.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSP5e5d1a-1e24-40bd-8d4a-4d75ed2cba05",
-                          "provided-uuid": "MSP886eb2-4b23-4673-9e5c-e0e56e87caef",
+                          "uuid": "MSP94bb0a-e58d-475a-a7df-e42134010d36",
+                          "provided-uuid": "MSP662d00-4ee5-49ac-a591-2241a03c50ab",
                           "description": "Results of the vulnerability scans are reported.",
                           "exportable": true
                         }
@@ -1752,24 +1752,24 @@
                   ]
                 },
                 {
-                  "uuid": "MSP32cb42-17c9-4abe-94d8-a850df46c679",
+                  "uuid": "MSPead592-5bcc-462a-98aa-8efa4b974bd2",
                   "statement-id": "ra-5_smt.f",
                   "by-components": [
                     {
-                      "uuid": "MSP6d3d6b-08cb-426e-996a-2f7eb0cfb3d4",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSP0e189a-7f53-416a-96ac-8a8664dc23a5",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Cloud service provider employed scanning tool is updated by the vendor.",
                       "provided": [
                         {
-                          "uuid": "MSP2923e2-b926-4b9e-a253-71a07b600b22",
-                          "description": "Cloud service provider vendor updates the vulnerability scanning tool. (Random Content Follows) Vulnerability service the tool. the the tool..",
+                          "uuid": "MSPceb21f-f2b8-435c-b787-106065138624",
+                          "description": "Cloud service provider vendor updates the vulnerability scanning tool. (Random Content Follows) Tool. tool. scanning vendor vulnerability the scanning the vendor scanning.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSPb5ef78-26fe-4134-9a01-2a77c0a7c70c",
-                          "provided-uuid": "MSP2923e2-b926-4b9e-a253-71a07b600b22",
+                          "uuid": "MSP392ef2-e0a9-4c54-b22f-4c1ff4c853a7",
+                          "provided-uuid": "MSPceb21f-f2b8-435c-b787-106065138624",
                           "description": "Vulnerability scanning tool employed by the cloud service provider is updated.",
                           "exportable": true
                         }
@@ -1780,28 +1780,28 @@
               ]
             },
             {
-              "uuid": "MSP58a1a9-0516-4fa5-b836-a7f4fcb9f448",
+              "uuid": "MSPbb1064-16c7-4353-9ac5-1c15679b2dff",
               "control-id": "ra-5.11",
               "statements": [
                 {
-                  "uuid": "MSPb74728-77c6-4ecd-b893-904c7d7f54d3",
+                  "uuid": "MSP5c39b3-961b-47a9-b0dd-4f7cc2f6517d",
                   "statement-id": "ra-5.11",
                   "by-components": [
                     {
-                      "uuid": "MSPe0673a-8e17-4db4-9df6-fe2c6bc3bd43",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSP3324da-11ba-47c1-aadd-e50d775a0164",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - A cloud service provider website is available for the public to reported system vulnerabilities.",
                       "provided": [
                         {
-                          "uuid": "MSP70d5f3-8062-4107-9c01-0d27ebf54699",
-                          "description": "A website is available for the public to report cloud service provider system vulnerabilities. (Random Content Follows) Service available available website provider website available website.",
+                          "uuid": "MSP7e2b0a-a846-4cf3-8f23-bc1770951092",
+                          "description": "A website is available for the public to report cloud service provider system vulnerabilities. (Random Content Follows) Report the the for website service website the vulnerabilities..",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSP2401a0-5f9c-4c93-8080-2c36a8cef291",
-                          "provided-uuid": "MSP70d5f3-8062-4107-9c01-0d27ebf54699",
+                          "uuid": "MSP880bde-b5e0-42ea-b012-d09a3fb6418e",
+                          "provided-uuid": "MSP7e2b0a-a846-4cf3-8f23-bc1770951092",
                           "description": "The public can report cloud service provider system vulnerabilities through a public website.",
                           "exportable": true
                         }
@@ -1812,28 +1812,28 @@
               ]
             },
             {
-              "uuid": "MSPab2d9e-6d87-4122-a203-06655217f8f5",
+              "uuid": "MSP8528cd-c719-4245-a4eb-cc1b98881f5f",
               "control-id": "ra-5.2",
               "statements": [
                 {
-                  "uuid": "MSP2daff6-b74c-4109-bb2d-db44237ac7fe",
+                  "uuid": "MSP89963e-7a8c-45cb-86a0-2c9b8b92e122",
                   "statement-id": "ra-5.2",
                   "by-components": [
                     {
-                      "uuid": "MSP147166-f12e-484f-9420-64683538b923",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSPbb2615-d21f-4306-b953-02a7e9879f40",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Cloud service provider system scanning tool vulnerability signatures are provided by the vendor and are updated prior to a new scan. ",
                       "provided": [
                         {
-                          "uuid": "MSP1c8a82-d16a-445a-af54-d0bcc82cd2ea",
-                          "description": "Cloud service provider system scanning tool vendor provides vulnerability signatures which are updated before each scan. (Random Content Follows) Service scan. Cloud vendor system scan. each.",
+                          "uuid": "MSPc122dc-0719-41bc-a3e7-9bb3b26b0fbf",
+                          "description": "Cloud service provider system scanning tool vendor provides vulnerability signatures which are updated before each scan. (Random Content Follows) Vulnerability are scan. scanning Cloud vendor.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSPddc68a-fa38-4ba1-a040-c47ef4b90343",
-                          "provided-uuid": "MSP1c8a82-d16a-445a-af54-d0bcc82cd2ea",
+                          "uuid": "MSPf0929d-8a41-4b2b-9a3e-ed8d643036a0",
+                          "provided-uuid": "MSPc122dc-0719-41bc-a3e7-9bb3b26b0fbf",
                           "description": "Signatures are provided and updated for the system scanning tool employed by the cloud service provider.",
                           "exportable": true
                         }
@@ -1844,28 +1844,28 @@
               ]
             },
             {
-              "uuid": "MSP54e92a-64fd-4c14-ab0c-774834f9382f",
+              "uuid": "MSP4430d4-ed67-44e8-8210-1be6e44ec93f",
               "control-id": "ra-5.5",
               "statements": [
                 {
-                  "uuid": "MSP4de082-b846-4cca-8203-ffef9adc54f8",
+                  "uuid": "MSP45d29f-f89b-47a2-b5cb-7afe8945384f",
                   "statement-id": "ra-5.5",
                   "by-components": [
                     {
-                      "uuid": "MSPab8726-8f6f-42b9-b329-e346526f52bd",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSP6f4c1f-a613-48bb-87cb-fbf558d724d6",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Credential scans are implemented on all cloud service provider system components for monthly vulnerability scans.",
                       "provided": [
                         {
-                          "uuid": "MSP135255-0186-493b-b250-b673c3499b62",
-                          "description": "Credential scans are conducted on all cloud service provider system components on a specific time frame. (Random Content Follows) Scans are cloud Credential on service components provider frame..",
+                          "uuid": "MSPce6b1a-2112-4f3c-a797-0cfac9a291a9",
+                          "description": "Credential scans are conducted on all cloud service provider system components on a specific time frame. (Random Content Follows) Scans cloud all conducted a system service.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSP8003a5-0259-43f7-8f12-18a5899081df",
-                          "provided-uuid": "MSP135255-0186-493b-b250-b673c3499b62",
+                          "uuid": "MSPef9de0-9476-4e5e-aa53-2bdd1fcd0655",
+                          "provided-uuid": "MSPce6b1a-2112-4f3c-a797-0cfac9a291a9",
                           "description": "Credential scans are conducted on all cloud service provider system components.",
                           "exportable": true
                         }
@@ -1876,28 +1876,28 @@
               ]
             },
             {
-              "uuid": "MSP857adc-ed89-4508-a121-80f060a8c691",
+              "uuid": "MSP933513-bc56-4fba-bd0a-d1654959654a",
               "control-id": "sa-11",
               "statements": [
                 {
-                  "uuid": "MSP4428dd-e3b8-4f9a-a1f1-6915ed6d8105",
+                  "uuid": "MSP82ee29-9da0-4a23-8a57-598fdb429479",
                   "statement-id": "sa-11",
                   "by-components": [
                     {
-                      "uuid": "MSPcdfbe4-33c3-4f9d-9ce6-0d331b789b63",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSP7cc710-3da8-469a-8e41-151115d8fdcf",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Cloud service provider system developers will develop and implement a plan for ongoing security and privacy control assessments; perform unit, integration, system, and regression testing/evaluation weekly at full depth and coverage; produce evidence of the execution of the assessment plan and the results of the testing and evaluation; implement a verifiable flaw remediation process; and correct flaws identified during testing and evaluation.",
                       "provided": [
                         {
-                          "uuid": "MSP4b642c-80fe-4602-9482-bc0aaad9c2ca",
-                          "description": "Cloud service provider developer will develop and implement specific system testing at specific times, provide results of testing, and correct identified flaws. (Random Content Follows) Implement service flaws. specific results service flaws. and.",
+                          "uuid": "MSP5c1838-ad45-40d0-b03c-c388f5df2ce5",
+                          "description": "Cloud service provider developer will develop and implement specific system testing at specific times, provide results of testing, and correct identified flaws. (Random Content Follows) System will and specific developer of system specific Cloud testing, correct provider provide.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSPa14a73-9426-4c22-b7f3-41234c1791c5",
-                          "provided-uuid": "MSP4b642c-80fe-4602-9482-bc0aaad9c2ca",
+                          "uuid": "MSPf1b738-66d4-4f48-8a1b-4465b6f70dd0",
+                          "provided-uuid": "MSP5c1838-ad45-40d0-b03c-c388f5df2ce5",
                           "description": "Testing is developed and conducted, results are provided, and flaws identified during testing are corrected.",
                           "exportable": true
                         }
@@ -1908,28 +1908,28 @@
               ]
             },
             {
-              "uuid": "MSP4ceed3-8fc3-43db-a5ee-b006ce1d209e",
+              "uuid": "MSPab351b-3fa6-4c92-846d-62370121036f",
               "control-id": "sc-2",
               "statements": [
                 {
-                  "uuid": "MSP6b2913-8f04-4707-bf6d-9c6b5c8ff953",
+                  "uuid": "MSPea42bf-434f-44da-b039-4006739c1d0e",
                   "statement-id": "sc-2",
                   "by-components": [
                     {
-                      "uuid": "MSP3acbb2-20bb-4ff4-b797-cdd9760918c0",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSPfdf6b6-1699-495b-b299-ba9a64c4533f",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Cloud service provider system user functionality is separate from system management functionality.",
                       "provided": [
                         {
-                          "uuid": "MSP891652-a484-4dda-ba90-5fdddeff8285",
-                          "description": "Cloud service provider functionalities are separated by user roles. (Random Content Follows) By functionalities functionalities service service are.",
+                          "uuid": "MSP13f0ec-809c-4b36-bd31-06987821ad6c",
+                          "description": "Cloud service provider functionalities are separated by user roles. (Random Content Follows) Service separated Cloud Cloud provider user are are are roles..",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSP9dd91b-41e5-437b-8115-9a87dc51e432",
-                          "provided-uuid": "MSP891652-a484-4dda-ba90-5fdddeff8285",
+                          "uuid": "MSP0253b4-59a5-4707-93e0-d1dc2c9fec4e",
+                          "provided-uuid": "MSP13f0ec-809c-4b36-bd31-06987821ad6c",
                           "description": "User functionalities on could service provider systems are separated by roles.",
                           "exportable": true
                         }
@@ -1940,28 +1940,28 @@
               ]
             },
             {
-              "uuid": "MSPbd3515-34f1-44da-ad8d-122911ea4f7c",
+              "uuid": "MSP380c6a-79a3-4d09-9059-c6228cb96ac0",
               "control-id": "sc-5",
               "statements": [
                 {
-                  "uuid": "MSPa7acde-f033-44fd-8913-cc4a2cb0f328",
+                  "uuid": "MSPda97a3-be41-422d-911b-c83f49092eb3",
                   "statement-id": "sc-5_smt.a",
                   "by-components": [
                     {
-                      "uuid": "MSP9ef032-c0c5-4ef7-bf1a-1e404fb0dee1",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSP84a59f-3887-4f54-a3df-146c3118c180",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Cloud service provider has implemented protections against denial of service flooding services and crashing services. Cloud service provider network and boundary routers filter all incoming packets.",
                       "provided": [
                         {
-                          "uuid": "MSP58e9e7-75d2-4dfb-9444-83c64a138a27",
-                          "description": "Cloud service provider network devices provide denial of service protections by filtering all incoming packets. (Random Content Follows) Of Cloud devices provider service provide network service provide.",
+                          "uuid": "MSP81e253-d451-4cd9-8022-7f9feb7c8757",
+                          "description": "Cloud service provider network devices provide denial of service protections by filtering all incoming packets. (Random Content Follows) Of protections network service of filtering.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSP60d34c-4302-4744-a389-a05db75e907e",
-                          "provided-uuid": "MSP58e9e7-75d2-4dfb-9444-83c64a138a27",
+                          "uuid": "MSP3ac4f6-95d8-4b79-a36c-9ad3e32f5a1e",
+                          "provided-uuid": "MSP81e253-d451-4cd9-8022-7f9feb7c8757",
                           "description": "Denial of service protections implemented by the cloud service provider filter all incoming packets.",
                           "exportable": true
                         }
@@ -1970,24 +1970,24 @@
                   ]
                 },
                 {
-                  "uuid": "MSP063728-6b3b-4800-b677-c1d716bd3564",
+                  "uuid": "MSPd7c981-f705-4c90-8961-38ac99171b81",
                   "statement-id": "sc-5_smt.b",
                   "by-components": [
                     {
-                      "uuid": "MSPccb1fb-fcd8-487f-9637-294074b98d5e",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSP693517-2c60-4c54-a965-c1afec28fcda",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Network packets are filtered by cloud service provider managed routers in the network and at the network boundary. System is also replicated along multiple VMs.",
                       "provided": [
                         {
-                          "uuid": "MSPb9b294-0d7f-45f4-9a6f-2b72d67d933c",
-                          "description": "Replicated cloud service provider network devices filter network packets in the network and at the boundary. (Random Content Follows) In boundary. packets filter at network the filter the.",
+                          "uuid": "MSP140d1b-1645-49db-9346-686a46df9ff9",
+                          "description": "Replicated cloud service provider network devices filter network packets in the network and at the boundary. (Random Content Follows) Provider the provider at Replicated cloud service the network Replicated in.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSP312b43-127d-44e9-b8e2-edce5f976c84",
-                          "provided-uuid": "MSPb9b294-0d7f-45f4-9a6f-2b72d67d933c",
+                          "uuid": "MSP840e51-da5b-4fc8-ad25-b5490b38232f",
+                          "provided-uuid": "MSP140d1b-1645-49db-9346-686a46df9ff9",
                           "description": "Network devices managed by the cloud service provider filter network packets.",
                           "exportable": true
                         }
@@ -1998,28 +1998,28 @@
               ]
             },
             {
-              "uuid": "MSP7729df-0086-4e45-a73c-042f987b6149",
+              "uuid": "MSPa63ba5-5435-4a5d-b30d-05e18569fa15",
               "control-id": "sc-7",
               "statements": [
                 {
-                  "uuid": "MSPaef6c0-9814-4c65-bb88-2d07ffc5bcfd",
+                  "uuid": "MSPd51acd-5c85-4e1d-b727-e9ee1e84b652",
                   "statement-id": "sc-7_smt.a",
                   "by-components": [
                     {
-                      "uuid": "MSP64c443-873f-44ab-8c48-9bf519caf4b2",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSPc02640-830b-4929-a2fc-1a23d81da85d",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Communication into and out of the cloud service provider system is monitored and controlled by network and boundary routers.",
                       "provided": [
                         {
-                          "uuid": "MSP974585-074f-47ad-810f-2f548f426c70",
-                          "description": "All inbound and outbound cloud service provider system communications are monitored and controlled by network devices. (Random Content Follows) And by All All All monitored outbound are.",
+                          "uuid": "MSP4ecc4c-3f26-4203-b635-30feb76ea2d0",
+                          "description": "All inbound and outbound cloud service provider system communications are monitored and controlled by network devices. (Random Content Follows) By monitored All All inbound controlled by and communications system.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSP9f8823-2fbc-4838-86af-6a66b92b39ca",
-                          "provided-uuid": "MSP974585-074f-47ad-810f-2f548f426c70",
+                          "uuid": "MSP00d2e4-a5e2-4192-9fb9-afd43d9e03a6",
+                          "provided-uuid": "MSP4ecc4c-3f26-4203-b635-30feb76ea2d0",
                           "description": "Cloud service provider network devices monitor and control all external communications with the system.",
                           "exportable": true
                         }
@@ -2028,24 +2028,24 @@
                   ]
                 },
                 {
-                  "uuid": "MSP49d1c8-96c6-4a9e-b86d-0c1995be2851",
+                  "uuid": "MSP91bda7-5e21-4bbb-9517-6d2d1cbe5422",
                   "statement-id": "sc-7_smt.b",
                   "by-components": [
                     {
-                      "uuid": "MSPd166f6-483f-4814-a669-e0a3c5dd75c7",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSPbb2b76-8444-4556-bc84-e0d5b2e08a52",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - There are no publicly accessible system components.",
                       "provided": [
                         {
-                          "uuid": "MSP799adc-cf1a-498a-9bc3-bdd9ede64aed",
-                          "description": "Cloud service provider system components are not publicly accessible. (Random Content Follows) Publicly system service components components system system.",
+                          "uuid": "MSPbc8d05-b07d-4952-bb3e-82eb733c1e05",
+                          "description": "Cloud service provider system components are not publicly accessible. (Random Content Follows) Are system provider service accessible. components not are provider not service Cloud.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSPf8900e-544b-4674-9785-fd3d5155e9b2",
-                          "provided-uuid": "MSP799adc-cf1a-498a-9bc3-bdd9ede64aed",
+                          "uuid": "MSPad6afa-bc8c-4bd5-bb6e-921e2342c3f0",
+                          "provided-uuid": "MSPbc8d05-b07d-4952-bb3e-82eb733c1e05",
                           "description": "There is no public access to cloud service provider system components.",
                           "exportable": true
                         }
@@ -2054,24 +2054,24 @@
                   ]
                 },
                 {
-                  "uuid": "MSP6bf7ea-b131-4bca-af75-ffe3cf77259d",
+                  "uuid": "MSP7ff07b-1d95-4a1a-9b29-bb80bb7f197e",
                   "statement-id": "sc-7_smt.c",
                   "by-components": [
                     {
-                      "uuid": "MSP55ff80-ee86-42d9-a784-a528aaa79cd6",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSPa08635-fc28-4ae8-973c-c7e81c7bb743",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - External systems or networks are connected to the cloud service provider systems through cloud service provider managed network and boundary routers.",
                       "provided": [
                         {
-                          "uuid": "MSP316f30-1099-4031-b8ae-904c92f27d22",
-                          "description": "External connections to cloud service provider systems are through cloud service provider managed network devices. (Random Content Follows) Provider cloud are cloud network through service through managed managed.",
+                          "uuid": "MSP30f086-7ed0-4005-b09b-ba59aef694c4",
+                          "description": "External connections to cloud service provider systems are through cloud service provider managed network devices. (Random Content Follows) To cloud cloud systems through External.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSPa844d1-3572-4a8b-bdc6-1078210e8d45",
-                          "provided-uuid": "MSP316f30-1099-4031-b8ae-904c92f27d22",
+                          "uuid": "MSPa098b0-aa96-4fb7-bac5-b6a5c52d0f0c",
+                          "provided-uuid": "MSP30f086-7ed0-4005-b09b-ba59aef694c4",
                           "description": "Cloud service provider network devices manage all external communication with cloud service provider systems.",
                           "exportable": true
                         }
@@ -2082,28 +2082,28 @@
               ]
             },
             {
-              "uuid": "MSP546315-fbc3-461d-8a28-d91396d7dca6",
+              "uuid": "MSPf10bdd-6689-460e-95cb-74aa077f9551",
               "control-id": "sc-7.3",
               "statements": [
                 {
-                  "uuid": "MSP3c20a6-de41-4352-ba3b-b9045fffbbaa",
+                  "uuid": "MSPe0d1d1-ea61-40f4-a313-eff2eb377326",
                   "statement-id": "sc-7.3",
                   "by-components": [
                     {
-                      "uuid": "MSPd3649b-e174-4479-8306-70b408382561",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSP6447b0-5e95-46bd-ae77-660cdafd9ad9",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Connections to cloud service provider system are only allowed through cloud service provider managed boundary routers.",
                       "provided": [
                         {
-                          "uuid": "MSPb0040d-3228-4eea-b20d-7f63f7b917bc",
-                          "description": "Connections to cloud service provider system are only through cloud service provider managed network devices. (Random Content Follows) Network through cloud are cloud devices. cloud service only provider Connections.",
+                          "uuid": "MSP40cdac-e23e-4a20-ab00-359d42c41d4d",
+                          "description": "Connections to cloud service provider system are only through cloud service provider managed network devices. (Random Content Follows) Connections provider provider network service Connections are service cloud cloud.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSP7d4389-c6e2-43a7-8ed1-e9ce090f9914",
-                          "provided-uuid": "MSPb0040d-3228-4eea-b20d-7f63f7b917bc",
+                          "uuid": "MSP1be48d-147e-4c32-a083-984e9e836464",
+                          "provided-uuid": "MSP40cdac-e23e-4a20-ab00-359d42c41d4d",
                           "description": "System connections are through cloud service provider managed network devices.",
                           "exportable": true
                         }
@@ -2114,28 +2114,28 @@
               ]
             },
             {
-              "uuid": "MSPfc1dc0-d8cc-4587-8334-3daee656efdd",
+              "uuid": "MSP6857f5-d384-4288-90a8-9bba46a24b19",
               "control-id": "sc-7.4",
               "statements": [
                 {
-                  "uuid": "MSPa7380a-c230-47d1-95c6-6e92a92f3531",
+                  "uuid": "MSP77c7f4-7338-45b0-bd16-9be02864a657",
                   "statement-id": "sc-7.4_smt.a",
                   "by-components": [
                     {
-                      "uuid": "MSP745c94-655d-407a-87bd-2e3e61227326",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSPa0dade-7252-498e-84be-adfb7cc22bb3",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - External communication with cloud service provider systems are provided by boundary routers.",
                       "provided": [
                         {
-                          "uuid": "MSP8242f1-bfc5-4202-8867-74ac6597017f",
-                          "description": "External communication with cloud service provider system are provided by boundary devices. (Random Content Follows) Communication system cloud devices. are provided are External devices. are boundary boundary boundary service.",
+                          "uuid": "MSPda02ed-f7bd-4731-82e0-e16b90111ea6",
+                          "description": "External communication with cloud service provider system are provided by boundary devices. (Random Content Follows) Boundary communication External with devices. with External system.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSPd6e95e-a504-4aa9-ae5b-14d59c16c524",
-                          "provided-uuid": "MSP8242f1-bfc5-4202-8867-74ac6597017f",
+                          "uuid": "MSP3f6289-1d3e-4a4a-b81a-cc14ef539448",
+                          "provided-uuid": "MSPda02ed-f7bd-4731-82e0-e16b90111ea6",
                           "description": "Boundary devices provide external communication with cloud service provider system.",
                           "exportable": true
                         }
@@ -2144,24 +2144,24 @@
                   ]
                 },
                 {
-                  "uuid": "MSP70f158-a9a3-476c-87fd-32885cbd1850",
+                  "uuid": "MSPfbab70-eef5-46cc-b0ad-0b628086dcbf",
                   "statement-id": "sc-7.4_smt.b",
                   "by-components": [
                     {
-                      "uuid": "MSP7709d1-a6f6-4465-a182-cb40b2b4f13c",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSP363658-2e8f-4ce0-9a94-c3eb37000640",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Cloud service provider traffic flow policies are enforced by the network routers.",
                       "provided": [
                         {
-                          "uuid": "MSPb910ea-93ee-4da2-a34d-dd59e54318c5",
-                          "description": "Cloud service provider traffic flow policies are enforced by network devices. (Random Content Follows) Are enforced by enforced Cloud service traffic enforced by network devices. policies Cloud.",
+                          "uuid": "MSPd945c1-41ad-40b1-a4ac-28fdaf52073e",
+                          "description": "Cloud service provider traffic flow policies are enforced by network devices. (Random Content Follows) Network enforced network provider enforced Cloud.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSPb676a0-6bdd-418d-b110-7342ce9f26a3",
-                          "provided-uuid": "MSPb910ea-93ee-4da2-a34d-dd59e54318c5",
+                          "uuid": "MSP6e0002-24e8-458e-96fd-0630a9093915",
+                          "provided-uuid": "MSPd945c1-41ad-40b1-a4ac-28fdaf52073e",
                           "description": "Cloud service provider network devices enforce traffic flow policies.",
                           "exportable": true
                         }
@@ -2170,24 +2170,24 @@
                   ]
                 },
                 {
-                  "uuid": "MSPa087c9-9f13-4338-82e5-2d7650ac3015",
+                  "uuid": "MSPb84552-8d91-47ff-b262-c0b8ac64c597",
                   "statement-id": "sc-7.4_smt.c",
                   "by-components": [
                     {
-                      "uuid": "MSPb47a6a-c8e8-480a-8249-0067e1f9a53d",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSP6f85fe-1647-4e81-9bd3-bc39a4c3ca86",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Cloud service provider has implemented TLS 1.2 to protect the confidentiality and integrity of transmitted information.",
                       "provided": [
                         {
-                          "uuid": "MSP5c25d3-51f1-4721-a152-7d8017f3b1e7",
-                          "description": "Cloud service provider has implemented TLS to protected transmitted information. (Random Content Follows) To to implemented has transmitted transmitted service TLS protected to transmitted TLS protected provider.",
+                          "uuid": "MSP04c116-f7c7-468a-8e21-0f642cd16ea9",
+                          "description": "Cloud service provider has implemented TLS to protected transmitted information. (Random Content Follows) Protected TLS implemented has service service protected to service implemented protected.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSPcb47c1-841e-405c-ad39-d28a92c0f0a9",
-                          "provided-uuid": "MSP5c25d3-51f1-4721-a152-7d8017f3b1e7",
+                          "uuid": "MSPd1957c-0aff-48ce-a293-19a9e5bea8e7",
+                          "provided-uuid": "MSP04c116-f7c7-468a-8e21-0f642cd16ea9",
                           "description": "Encryption has been implemented by the cloud service provider to protect transmitted information.",
                           "exportable": true
                         }
@@ -2196,24 +2196,24 @@
                   ]
                 },
                 {
-                  "uuid": "MSP58268e-473e-4a54-bea0-0d80aa537bbc",
+                  "uuid": "MSP3194d8-aa82-463b-b66e-014297ff0a89",
                   "statement-id": "sc-7.4_smt.d",
                   "by-components": [
                     {
-                      "uuid": "MSP6c243c-dfa6-4f2b-b4a3-6e75be63ff5d",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSP082785-18e3-4cca-b38e-d98eb11c9c84",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Exceptions to the cloud service provider traffic flow policy are documented in the SSP.",
                       "provided": [
                         {
-                          "uuid": "MSP15641f-25ce-43d9-b2a3-af2afcac5b0d",
-                          "description": "Traffic flow exemptions are documented in the cloud service provider policy. (Random Content Follows) Cloud cloud exemptions exemptions policy. service documented service service policy. Traffic.",
+                          "uuid": "MSP41e226-ea0b-4686-b6b5-88772b80d6de",
+                          "description": "Traffic flow exemptions are documented in the cloud service provider policy. (Random Content Follows) The Traffic cloud flow provider cloud documented policy. provider Traffic in policy..",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSP7c724c-2a46-43a3-ba2b-e82816daa583",
-                          "provided-uuid": "MSP15641f-25ce-43d9-b2a3-af2afcac5b0d",
+                          "uuid": "MSPedb82c-ebd9-4a55-99fc-c4ab76e21445",
+                          "provided-uuid": "MSP41e226-ea0b-4686-b6b5-88772b80d6de",
                           "description": "Traffic flow policy for the cloud service provider is documented.",
                           "exportable": true
                         }
@@ -2222,24 +2222,24 @@
                   ]
                 },
                 {
-                  "uuid": "MSP8227f7-1263-488f-8a20-ea57afa3458a",
+                  "uuid": "MSP1abab2-6cd9-4de5-a9f2-f249ee072fb5",
                   "statement-id": "sc-7.4_smt.e",
                   "by-components": [
                     {
-                      "uuid": "MSPd8b5a3-5a7e-4b68-b545-766db89534ab",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSP258e1d-e732-47e8-b12a-da57cfc2e07b",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Exceptions to the cloud service provider traffic policy are reviewed annually and updated as they are identified.",
                       "provided": [
                         {
-                          "uuid": "MSPf4bd34-15f9-4058-8929-5974a6f7bcbf",
-                          "description": "Cloud service provider traffic flow exceptions are reviewed at a specific time frame and updated as needed. (Random Content Follows) At Cloud exceptions updated are reviewed.",
+                          "uuid": "MSP888ba6-eef9-4b6a-b894-2a96be63d3e4",
+                          "description": "Cloud service provider traffic flow exceptions are reviewed at a specific time frame and updated as needed. (Random Content Follows) Service updated specific exceptions and traffic flow updated reviewed provider specific service are.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSPf67e8f-8dc0-441c-972e-9755289a3c1e",
-                          "provided-uuid": "MSPf4bd34-15f9-4058-8929-5974a6f7bcbf",
+                          "uuid": "MSP898f1f-db69-4ade-be8b-8e38d0dcea31",
+                          "provided-uuid": "MSP888ba6-eef9-4b6a-b894-2a96be63d3e4",
                           "description": "Cloud service provider traffic flow policy is reviewed and updated.",
                           "exportable": true
                         }
@@ -2248,24 +2248,24 @@
                   ]
                 },
                 {
-                  "uuid": "MSP24d4f3-2c6c-4f69-b563-f0d6fd9ac696",
+                  "uuid": "MSPc004cc-7fc7-4944-ae0b-d0a3179173ed",
                   "statement-id": "sc-7.4_smt.f",
                   "by-components": [
                     {
-                      "uuid": "MSPf9856b-3fda-427b-8e2f-5d4339fae386",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSPcd827b-907b-4530-a7ff-86f8ab545d95",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Cloud service provider traffic flow is enforced by network routers following traffic flow policies.",
                       "provided": [
                         {
-                          "uuid": "MSPbc1400-f383-4079-aa6a-fcd6e3c7dae9",
-                          "description": "Traffic flow policy is enforced by cloud service provider network devices. (Random Content Follows) Traffic devices. is by provider network by provider.",
+                          "uuid": "MSP6a5e84-0418-4f5c-adcc-80f23b576a09",
+                          "description": "Traffic flow policy is enforced by cloud service provider network devices. (Random Content Follows) Network cloud network is cloud provider policy policy Traffic.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSP9a4284-4c34-442b-9eb2-fc3c00e17e0f",
-                          "provided-uuid": "MSPbc1400-f383-4079-aa6a-fcd6e3c7dae9",
+                          "uuid": "MSPc9dd71-aff4-4bab-beaa-94f0a238b44e",
+                          "provided-uuid": "MSP6a5e84-0418-4f5c-adcc-80f23b576a09",
                           "description": "Cloud service provider traffic flow policy is enforced.",
                           "exportable": true
                         }
@@ -2274,24 +2274,24 @@
                   ]
                 },
                 {
-                  "uuid": "MSP2155e3-ea2b-4e99-839a-45553fd10f7a",
+                  "uuid": "MSP8ab3d5-477b-437c-a08a-434bfa229dd5",
                   "statement-id": "sc-7.4_smt.g",
                   "by-components": [
                     {
-                      "uuid": "MSPc2cda3-0e3c-4013-9df8-b69c495d0b57",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSP64ed33-6cdd-45f4-a107-884373071c9f",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - External networks do not have access to cloud service provider internal networks.",
                       "provided": [
                         {
-                          "uuid": "MSP90da26-c100-46fd-9fc0-92525e48a640",
-                          "description": "External networks can't access the cloud service provider networks. (Random Content Follows) Networks. can't networks. cloud networks. service networks access access provider service.",
+                          "uuid": "MSPff812a-19f7-4045-b1ce-a14989f12e06",
+                          "description": "External networks can't access the cloud service provider networks. (Random Content Follows) Access External networks. the networks. networks. the provider access service.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSP1d63d8-9936-45b7-9758-b4aaabc1b39b",
-                          "provided-uuid": "MSP90da26-c100-46fd-9fc0-92525e48a640",
+                          "uuid": "MSP2d1109-a97c-44a6-bdb0-e091644b2c86",
+                          "provided-uuid": "MSPff812a-19f7-4045-b1ce-a14989f12e06",
                           "description": "Cloud service provider networks are not accessible by external networks.",
                           "exportable": true
                         }
@@ -2300,24 +2300,24 @@
                   ]
                 },
                 {
-                  "uuid": "MSPd6034d-e9f8-4b9b-b6ac-f7394b30e687",
+                  "uuid": "MSPebb352-3ddd-4dda-a4fc-e95b9ab27795",
                   "statement-id": "sc-7.4_smt.h",
                   "by-components": [
                     {
-                      "uuid": "MSP4d1dd5-5570-47cf-b562-0363703a7990",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSPe56b0c-0cdd-49a3-bb49-eb9496c2cdbf",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Cloud service provider control plane traffic is enforced by the network routers.",
                       "provided": [
                         {
-                          "uuid": "MSP3b75d2-c383-47be-9c6e-c9e178bad3af",
-                          "description": "Cloud service provider network devices filter control plane traffic. (Random Content Follows) Filter control service plane plane control filter.",
+                          "uuid": "MSP6f2f73-7f54-43bd-96e9-a6155ce0db59",
+                          "description": "Cloud service provider network devices filter control plane traffic. (Random Content Follows) Traffic. service service provider network filter filter provider provider provider service.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSPf83654-99e8-4adb-a829-5ad6312445a6",
-                          "provided-uuid": "MSP3b75d2-c383-47be-9c6e-c9e178bad3af",
+                          "uuid": "MSPebde6f-5e16-47a2-b58b-a6c69b33d861",
+                          "provided-uuid": "MSP6f2f73-7f54-43bd-96e9-a6155ce0db59",
                           "description": "Control plane traffic is filtered by the cloud service provider network.",
                           "exportable": true
                         }
@@ -2328,28 +2328,28 @@
               ]
             },
             {
-              "uuid": "MSP32edee-5872-42e1-a35b-c83bacbd5ac8",
+              "uuid": "MSP0a9e54-eb0b-453a-803e-9346dd7ccf44",
               "control-id": "sc-7.5",
               "statements": [
                 {
-                  "uuid": "MSP78bcc2-fe9f-4d5f-809c-b246655e7314",
+                  "uuid": "MSP18b4ab-cbee-4609-b567-4c452c393ab7",
                   "statement-id": "sc-7.5",
                   "by-components": [
                     {
-                      "uuid": "MSPf928ae-307d-4826-9f51-10740021d0b5",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSPe5c0f4-b863-4143-8dac-f0f7123ff06a",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Cloud service provider managed network routers deny network traffic to all cloud service provider systems by default and allow by exception.",
                       "provided": [
                         {
-                          "uuid": "MSPed5af2-b897-4531-93be-5a4d3e9de27a",
-                          "description": "Cloud service provider network devices deny network traffic by default and allow by exception. (Random Content Follows) Provider allow and traffic provider provider service traffic devices provider Cloud.",
+                          "uuid": "MSP66414b-c3f5-4e63-b1de-b7e93accc022",
+                          "description": "Cloud service provider network devices deny network traffic by default and allow by exception. (Random Content Follows) Default Cloud by provider devices service exception. traffic and.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSP4ac762-48bb-417f-b9c4-fce2466811ab",
-                          "provided-uuid": "MSPed5af2-b897-4531-93be-5a4d3e9de27a",
+                          "uuid": "MSPa55fba-e4cf-4fd2-bd7a-394d7a426ec0",
+                          "provided-uuid": "MSP66414b-c3f5-4e63-b1de-b7e93accc022",
                           "description": "Network communications traffic policy is enforced by the cloud service provider network devices.",
                           "exportable": true
                         }
@@ -2360,28 +2360,28 @@
               ]
             },
             {
-              "uuid": "MSP95c1a0-19e1-401a-99e9-bde5330e8500",
+              "uuid": "MSP7c6b77-4fa6-4d65-9d1b-3460eb0260ac",
               "control-id": "sc-7.7",
               "statements": [
                 {
-                  "uuid": "MSP448ac5-8d6c-40c9-973a-31082d995fb5",
+                  "uuid": "MSPc3d11e-cf2e-4081-b75a-de07bfe3c5d8",
                   "statement-id": "sc-7.7",
                   "by-components": [
                     {
-                      "uuid": "MSP2f7920-a396-4fe4-b0e4-b7eaf56c9db9",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSP4c1894-dd71-4be6-a48a-483f5a82139a",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - Cloud service provider does not allow split tunneling.",
                       "provided": [
                         {
-                          "uuid": "MSP62d0bd-24a6-4725-b156-8b995f08c2d1",
-                          "description": "Cloud service provider prevents split tunneling for remote connections. (Random Content Follows) Tunneling connections. service prevents Cloud tunneling tunneling remote split remote Cloud Cloud.",
+                          "uuid": "MSP291132-80e2-4b86-b6c2-495b67c711ab",
+                          "description": "Cloud service provider prevents split tunneling for remote connections. (Random Content Follows) Tunneling for provider tunneling provider for prevents provider split.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSPfe664c-7655-4c0e-a9bc-cc4892cb3729",
-                          "provided-uuid": "MSP62d0bd-24a6-4725-b156-8b995f08c2d1",
+                          "uuid": "MSP1e72b0-79ba-4266-a04c-2726db7cd32d",
+                          "provided-uuid": "MSP291132-80e2-4b86-b6c2-495b67c711ab",
                           "description": "Split tunneling is prevented by the cloud service provider.",
                           "exportable": true
                         }
@@ -2392,28 +2392,28 @@
               ]
             },
             {
-              "uuid": "MSP172023-885c-4010-adc8-455b640d033b",
+              "uuid": "MSPc654b0-682e-4921-913f-153a14ca86d6",
               "control-id": "sc-7.8",
               "statements": [
                 {
-                  "uuid": "MSP299f97-1c64-439c-b378-7a1dc53a580b",
+                  "uuid": "MSPab5070-a57e-4e34-930c-6e17bbbf9f6f",
                   "statement-id": "sc-7.8",
                   "by-components": [
                     {
-                      "uuid": "MSP5c694a-5918-4466-9381-d8a1f4d8a0bc",
-                      "component-uuid": "MSP5faf43-a61a-460e-b28a-40c505de3d63",
+                      "uuid": "MSP7977ab-926d-4758-b8d0-ac40efdddf95",
+                      "component-uuid": "MSPec5ebd-98a9-4405-ac45-6bd953c2cc05",
                       "description": "DO NOT SHARE - All cloud service provider internal communication traffic to all external networks are routed through the cloud service provider managed boundary proxy servers and routers.",
                       "provided": [
                         {
-                          "uuid": "MSP652579-54c6-4e03-a60f-f1b88daea034",
-                          "description": "Cloud service provider communication traffic to external networks are routed through cloud service provider managed boundary devices. (Random Content Follows) Boundary routed through networks to routed.",
+                          "uuid": "MSP1d48c1-fba9-4d4e-8c6e-db4850af7ec4",
+                          "description": "Cloud service provider communication traffic to external networks are routed through cloud service provider managed boundary devices. (Random Content Follows) Through traffic provider provider networks through traffic to.",
                           "exportable": true
                         }
                       ],
                       "responsibilities": [
                         {
-                          "uuid": "MSP23e9e4-0efa-4e38-a7eb-e3b0c8251bae",
-                          "provided-uuid": "MSP652579-54c6-4e03-a60f-f1b88daea034",
+                          "uuid": "MSPb561cc-41c2-492d-b9fd-f734a7d83639",
+                          "provided-uuid": "MSP1d48c1-fba9-4d4e-8c6e-db4850af7ec4",
                           "description": "Cloud service provider managed boundary devices control all traffic to external networks.",
                           "exportable": true
                         }

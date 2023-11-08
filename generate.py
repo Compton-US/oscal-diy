@@ -154,7 +154,7 @@ for ssp_template in templates:
 t.record_collection.records = t.record_list
 record_content = t.record_collection.dict()['records']
 
-print(record_content)
+# print(record_content)
 
 #%%
 df = pd.DataFrame(record_content)
