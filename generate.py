@@ -154,10 +154,15 @@ for ssp_template in templates:
 t.record_collection.records = t.record_list
 record_content = t.record_collection.dict()['records']
 
-# print(record_content)
+
 
 #%%
 df = pd.DataFrame(record_content)
+
+for index, row in df.iterrows():
+    if row['control'] == 'sc-5':
+        print(f"{row['control']} : {row['uuid']} : {row['a_uuid']}")
+
 df.to_csv('test.csv')
 
 # %%

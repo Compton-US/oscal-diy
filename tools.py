@@ -46,9 +46,11 @@ class IdCollection(BaseModel):
     records: List[IdRecord] = Field(default=[])
     
 record_list = []
-
-global record_collection 
 record_collection = IdCollection()
+
+def add_record(record):
+    global record_list
+    record_list.append(record)
 
 ########################################################################
 
@@ -103,6 +105,19 @@ def get_marker_uuid(marker):
 # satisfied <- responsibility
 # satisfied <- inherited
 
+def check_node_exists(id, nodes):
+    item_exists = [node for node in nodes if id in node.values()]
+    if item_exists:
+        return True
+    return False
+
+def check_edge_exists(source, target, edges):
+    item_exists = [edge for edge in edges if source in edge.values() and target in edge.values()]
+    if item_exists:
+        return True
+    return False
+
+
 def get_related_uuids(target_name, source_name, source_uuid=None):
     rel = Relation
     rel.source.name = source_name
@@ -133,6 +148,13 @@ def get_components(document, statement_id=None):
 
 
 def get_inherited_responses(crm, current_org_type=None, control_id=None, statement_id=None, marker=''):
+    # Track Connections
+    crm_org = {
+        'csp': 'csp',
+        'msp': 'csp',
+        'app': 'msp'
+    }
+
     crm_inherited_content = []
     crm_satisfied_content = []
     
@@ -143,6 +165,7 @@ def get_inherited_responses(crm, current_org_type=None, control_id=None, stateme
         ##### PROVIDED ##############################################
         if 'provided' in dir(component):
             inherited_uuid = get_marker_uuid(marker)
+            # print(f"{inherited_uuid}:{component.provided[0]['uuid']}")
             crm_inherited_content.append({
                 'uuid': inherited_uuid,
                 'provided-uuid': component.provided[0]['uuid'],
@@ -151,10 +174,9 @@ def get_inherited_responses(crm, current_org_type=None, control_id=None, stateme
                     + component.provided[0]['description']            
             })
 
-            # Track Connections
             record = {
                 'source': current_org_type,
-                'document': 'crm',
+                'document': 'ssp',
                 'control': control_id,
                 'statement': statement_id,
                 'relation': 'inherited',
@@ -163,7 +185,20 @@ def get_inherited_responses(crm, current_org_type=None, control_id=None, stateme
                 'a_uuid_name': 'provided-uuid',
                 'a_uuid': component.provided[0]['uuid']
             }
-            record_list.append(IdRecord(**record))
+            add_record(IdRecord(**record))
+
+            record = {
+                'source': crm_org[current_org_type],
+                'document': 'crm',
+                'control': control_id,
+                'statement': statement_id,
+                'relation': 'provided',
+                'a_uuid_name': '',
+                'a_uuid': '',
+                'uuid_name': 'provided-uuid',
+                'uuid': component.provided[0]['uuid']
+            }
+            add_record(IdRecord(**record))
             # End Track Connections
 
         ##### RESPONSIBILITIES ##############################################
@@ -181,7 +216,7 @@ def get_inherited_responses(crm, current_org_type=None, control_id=None, stateme
             # Track Connections
             record = {
                 'source': current_org_type,
-                'document': 'crm',
+                'document': 'ssp',
                 'control': control_id,
                 'statement': statement_id,
                 'relation': 'satisfied',
@@ -190,7 +225,20 @@ def get_inherited_responses(crm, current_org_type=None, control_id=None, stateme
                 'a_uuid_name': 'responsibilities-uuid',
                 'a_uuid': component.responsibilities[0]['uuid']
             }
-            record_list.append(IdRecord(**record))
+            add_record(IdRecord(**record))
+
+            record = {
+                'source': crm_org[current_org_type],
+                'document': 'crm',
+                'control': control_id,
+                'statement': statement_id,
+                'relation': 'responsibilities',
+                'a_uuid_name': '',
+                'a_uuid': '',
+                'uuid_name': 'responsibilities-uuid',
+                'uuid': component.responsibilities[0]['uuid']
+            }
+            add_record(IdRecord(**record))
             # End Track Connections
 
     return (crm_inherited_content,crm_satisfied_content)
@@ -257,7 +305,7 @@ def build_ssp(filepath_template, metadata, controls=None, crm=None):
                 'a_uuid_name': '',
                 'a_uuid': ''
             }
-            record_list.append(IdRecord(**record))
+            add_record(IdRecord(**record))
             # End Track Connections
 
             ##### RESPONSIBILITIES ##############################################
@@ -281,7 +329,7 @@ def build_ssp(filepath_template, metadata, controls=None, crm=None):
                 'a_uuid_name': 'provided_uuid',
                 'a_uuid': provided_uuid
             }
-            record_list.append(IdRecord(**record))
+            add_record(IdRecord(**record))
             # End Track Connections
 
             ##### SATISFIED ##############################################
@@ -306,7 +354,7 @@ def build_ssp(filepath_template, metadata, controls=None, crm=None):
                 'a_uuid_name': 'responsibilities_uuid',
                 'a_uuid': responsibilities_uuid
             }
-            record_list.append(IdRecord(**record))
+            add_record(IdRecord(**record))
             # End Track Connections
 
 
@@ -350,7 +398,7 @@ def build_ssp(filepath_template, metadata, controls=None, crm=None):
                     'a_uuid_name': 'provided-uuid',
                     'a_uuid': provided_uuid
                 }
-                record_list.append(IdRecord(**record))
+                add_record(IdRecord(**record))
                 # End Track Connections
                 
 
@@ -578,6 +626,7 @@ class Action:
         
         g = Digraph(format='svg')
         # g.graph_attr['size'] = '20000,20000'
+        g.graph_attr.update({'nodesep': '6'})
 
         g.attr(scale='2', label=title, fontsize='16')
 
@@ -615,7 +664,7 @@ class Action:
                         label="Workflow", 
                         penwidth="4", 
                         color=self.make_color(colors['workflow'],.4),
-                        margin="50.0,50.0"
+                        margin="250.0,250.0"
                         )
 
                     custom_color = self.make_color(colors[node['type']])
@@ -641,13 +690,17 @@ class Action:
             if 'belongs_to' not in edge:
                 entry = (edge['source'], edge['target'])
                 if entry not in ed:
+                    line_color = colors['line']
+                    line_weight = "2"
 
                     if 'style' in edge and edge['style'] in colors:
                         line_color = colors[edge['style']]
-                    else:
-                        line_color = colors['line']
 
-                    g.attr('edge',arrowsize="2",weight="4",color=line_color, penwidth="3")
+                        if edge['style'] == 'line_connect':
+                            line_weight = "8"
+
+
+                    g.attr('edge',arrowsize="2",weight=line_weight,color=line_color, penwidth=line_weight)
                     g.edge(edge['source'], edge['target'])
                     
                     # ed_content = (edge['source'], edge['target'])
