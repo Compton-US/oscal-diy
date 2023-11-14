@@ -284,6 +284,13 @@ def build_ssp(filepath_template, metadata, controls=None, crm=None):
             # }
 
             ##### PROVIDED ##############################################
+            responsibilities_uuid = ''
+            responsibilities_content = []
+            provided_uuid = ''
+            provided_content = []
+
+
+            # if current_org_type != 'app':
             provided_uuid = get_marker_uuid(current_org_type)
             provided_content = [{
                 'uuid': provided_uuid,
@@ -292,6 +299,7 @@ def build_ssp(filepath_template, metadata, controls=None, crm=None):
                                     + random_prose(row['export_provided']),
                 'exportable': True
             }]
+
 
             # Track Connections
             record = {
@@ -386,6 +394,7 @@ def build_ssp(filepath_template, metadata, controls=None, crm=None):
 
                 #print(IdCollection, dir(IdCollection))
 
+                # if current_org_type != 'app':
                 # Track Connections
                 record = {
                     'source': current_org_type,
@@ -624,11 +633,11 @@ class Action:
 
     def make_diagram(self, nodes_and_edges, title='Workflow Diagram', colors={'default':'#cccccc'}, filename='Overview', box_width=50):
         
-        g = Digraph(format='svg')
+        g = Digraph(format='svg', graph_attr={'splines':'false', 'overlap':'false'}) #, 'nodesep': '2'})
         # g.graph_attr['size'] = '20000,20000'
-        g.graph_attr.update({'nodesep': '6'})
+        # g.graph_attr.update({'nodesep': '1116'})
 
-        g.attr(scale='2', label=title, fontsize='16')
+        g.attr(scale='2', label=title, fontsize='160')
 
         g.attr('node', shape='box', style='filled', fontsize='16')
 
@@ -660,10 +669,10 @@ class Action:
                             if entry not in all_sub_ed:
                                 sub_ed.append(entry)
                                 all_sub_ed.append(entry)
+
                     job_group.attr(
-                        label="Workflow", 
-                        penwidth="4", 
-                        color=self.make_color(colors['workflow'],.4),
+                        label="OSCAL Document", 
+                        penwidth="2", 
                         margin="250.0,250.0"
                         )
 
@@ -673,7 +682,7 @@ class Action:
                         fillcolor=fillcolor, 
                         penwidth="4",
                         color=self.make_color(fillcolor,.4))
-                    job_group.attr('edge',arrowsize="1",weight="2",color=custom_color, penwidth="4")
+                    job_group.attr('edge',arrowsize="1",weight="2",color=custom_color, penwidth="2")
                     job_group.edges(sub_ed)
                 
             else:
@@ -681,10 +690,9 @@ class Action:
                 if node['type'] == 'workflow':
                     node_width = workflow_nodes_width
 
-                g.node(node['id'], label=f"<{self.make_table(node, node_width)}>", fillcolor=fillcolor, penwidth="4",color=self.make_color(fillcolor,.4))
+                g.node(node['id'], label=f"<{self.make_table(node, node_width)}>", fillcolor=fillcolor, margin=".5", penwidth="4",color=self.make_color(fillcolor,.4))
 
         ed=[]
-        
 
         for edge in nodes_and_edges['edges']:
             if 'belongs_to' not in edge:
@@ -697,21 +705,19 @@ class Action:
                         line_color = colors[edge['style']]
 
                         if edge['style'] == 'line_connect':
-                            line_weight = "8"
+                            # InterDocument Connection
+                            line_weight = "2"
 
 
                     g.attr('edge',arrowsize="2",weight=line_weight,color=line_color, penwidth=line_weight)
-                    g.edge(edge['source'], edge['target'])
-                    
-                    # ed_content = (edge['source'], edge['target'])
-                    # ed.append(ed_content)
 
+                    if edge['style'] == 'line_connect':
+                        g.edge(f"{edge['source']}:s", f"{edge['target']}:s",style='dashed')
+                    else:
+                        g.edge(f"{edge['source']}:s", f"{edge['target']}:n")
 
-        
-        # g.edges(ed)
-
-        # dot or fdp
-        g.render(filename=f"{self.get_path_and_prefix()}{filename}", engine=use_engine)
+        # g.unflatten(stagger=4)
+        g.unflatten(stagger=3).render(filename=f"{self.get_path_and_prefix()}{filename}", engine=use_engine)
         g = None
 
         return self.diagram_markdown(title, filename)

@@ -43,7 +43,6 @@ show_edges              = True
 link_documents          = True
 link_responses          = False
 plot_associations       = False
-
 show_documents          = ['ssp'] #,'crm']
 show_responses          = ['provided', 'inherited', 'responsibilities', 'satisfied']
 show_controls           = ['sc-5']
@@ -64,21 +63,24 @@ if show_document_level:
             "id": "root_ssp_csp", 
             "label": 'SSP: CSP', 
             "type":"model", 
-            "file_type":"OSCAL"
+            "file_type":"OSCAL",
+            "belongs_to": "root_ssp_csp"
         })
 
         diagram['nodes'].append({
             "id": "root_ssp_msp", 
             "label": 'SSP: MSP', 
             "type":"model", 
-            "file_type":"OSCAL"
+            "file_type":"OSCAL",
+            "belongs_to": "root_ssp_msp"
         })
 
         diagram['nodes'].append({
             "id": "root_ssp_app", 
             "label": 'SSP: APP', 
             "type":"model", 
-            "file_type":"OSCAL"
+            "file_type":"OSCAL",
+            "belongs_to": "root_ssp_app"
         })
 
     if 'crm' in show_documents:
@@ -86,14 +88,16 @@ if show_document_level:
             "id": "root_crm_csp", 
             "label": 'CRM: CSP', 
             "type":"model", 
-            "file_type":"OSCAL"
+            "file_type":"OSCAL",
+            "belongs_to": "root_ssp_csp"
         })
 
         diagram['nodes'].append({
             "id": "root_crm_msp", 
             "label": 'CRM: MSP', 
             "type":"model", 
-            "file_type":"OSCAL"
+            "file_type":"OSCAL",
+            "belongs_to": "root_ssp_msp"
         })
 
 
@@ -105,17 +109,18 @@ for index, row in df_rels.iterrows():
                 label = row['control'].upper()
 
                 control_rel = act.b64(f"{row['source']}{row['document']}{row['control']}")
+                source = f"root_{row['document']}_{row['source']}"
 
                 if show_control_level:
                     diagram['nodes'].append({
                         "id": control_rel, 
                         "label": label, 
                         "type":"control", 
-                        "file_type":"ctl"
+                        "file_type":"ctl",
+                        "belongs_to": source
                     })
 
                 if show_edges:
-                    source = f"root_{row['document']}_{row['source']}"
                     target = control_rel
 
                     if not check_edge_exists(source, target, diagram['edges']):
@@ -136,13 +141,15 @@ for index, row in df_rels.iterrows():
 
                 control_rel = act.b64(f"{row['source']}{row['document']}{row['control']}")
                 statement_rel = act.b64(f"{row['source']}{row['document']}{row['statement']}")
+                source = f"root_{row['document']}_{row['source']}"
 
                 if show_statement_level:
                     diagram['nodes'].append({
                         "id": statement_rel, 
                         "label": label, 
                         "type":"statement", 
-                        "file_type":"stmt"
+                        "file_type":"stmt",
+                        "belongs_to": source
                     })
 
                 if show_edges and not check_edge_exists(control_rel, statement_rel, diagram['edges']):
@@ -162,12 +169,14 @@ for index, row in df_rels.iterrows():
             if row['uuid'] not in diagram['nodes']:
                 if row['relation'].lower() in show_responses:
 
+                    source = f"root_{row['document']}_{row['source']}"
                     label = f"{row['statement']}:{row['relation']}:{row['source']}<br/>{row['uuid'][0:9]}:{str(row['a_uuid'])[0:9]}".upper()
                     diagram['nodes'].append({
                         "id": row['uuid'], 
                         "label": label, 
                         "type":row['relation'].lower(), 
-                        "file_type":row['document']
+                        "file_type":row['document'],
+                        "belongs_to": source
                     })
 
 if plot_associations:
@@ -205,7 +214,7 @@ for index, row in df_rels.iterrows():
 
                     # Within document references.
                     if link_responses:
-                        if isinstance(row['a_uuid'], str) and row['document'] == 'ssp': # and row['uuid'][0:3] == row['a_uuid'][0:3]:
+                        if isinstance(row['a_uuid'], str) and row['document'] == 'ssp' and row['uuid'][0:3] == row['a_uuid'][0:3]:
                             # if check_edge_exists(row['a_uuid'], row['uuid'], diagram['edges']) or False:
                             diagram['edges'].append({
                                 "source": row['uuid'],
@@ -244,7 +253,10 @@ if os.path.isfile(mkdn):
 
 #%%
 if len(show_controls) < 3:
-    t.use_engine = "fdp" # "fdp" # "circo" # "neato"
+    # dot is good
+    # sfdp also good
+    t.use_engine = "dot" # "fdp" # "circo" # "neato"
+    
     # ['circo', 'dot', 'fdp', 'neato', 'osage', 'patchwork', 'sfdp', 'twopi']
 
 act.make_diagram(diagram, colors=colors, filename=f"UUID_Relationships.graph", title="OSCAL Document Relationships")
