@@ -2,4 +2,4 @@
 
 ---
 
-![Graphical Representation of OSCAL Document Relationships](ProjectUUID_Relationships.graph.svg)
+![Graphical Representation of OSCAL Document Relationships](ProjectUUID_Relationships.graph.dot.svg)

@@ -244,7 +244,7 @@ if link_documents:
                             }) 
 
 #%%
-output.append(act.diagram_markdown(title="OSCAL Document Relationships", filename=f"UUID_Relationships.graph"))
+output.append(act.diagram_markdown(title="OSCAL Document Relationships", filename=f"UUID_Relationships.graph.dot"))
 
 #%%
 mkdn = 'output/Project.workflows.md'
@@ -259,5 +259,5 @@ if len(show_controls) < 3:
     
     # ['circo', 'dot', 'fdp', 'neato', 'osage', 'patchwork', 'sfdp', 'twopi']
 
-act.make_diagram(diagram, colors=colors, filename=f"UUID_Relationships.graph", title="OSCAL Document Relationships")
+act.make_diagram(diagram, colors=colors, filename=f"UUID_Relationships.graph.dot", title="OSCAL Document Relationships")
 act.save_markdown(output)
