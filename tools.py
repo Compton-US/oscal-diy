@@ -155,91 +155,145 @@ def get_inherited_responses(crm, current_org_type=None, control_id=None, stateme
         'app': 'msp'
     }
 
+    next_org = {
+        'csp': 'msp',
+        'msp': 'app'
+    }
+
     crm_inherited_content = []
     crm_satisfied_content = []
     
     crm_components = get_components(crm.responsibility_sharing.capabilities[0]['control_implementation'], statement_id)
 
     for component in crm_components:
+        ##### INHERITED ##############################################
+        if 'inherited' in dir(component) and component.inherited != None:
+            for response in component.inherited:
+                inherited_uuid = get_marker_uuid(marker)
+                print(f"-- {inherited_uuid}:{response['provided-uuid']}")
+
+                crm_inherited_content.append({
+                    'uuid': inherited_uuid,
+                    'provided-uuid': response['uuid'],
+                    # 'satisfied-uuid': satisfied_uuid,
+                    'description': f"PASSING ON FROM {crm_org[current_org_type]} ({response['provided-uuid']}) "
+                        + response['description']            
+                })
+
+                # Track Connections
+                ##### INHERITED ##############################################
+                record = {
+                    'source': current_org_type,
+                    'document': 'ssp',
+                    'control': control_id,
+                    'statement': statement_id,
+                    'relation': 'inherited',
+                    'uuid_name': 'inherited-uuid',
+                    'uuid': inherited_uuid,
+                    'a_uuid_name': 'provided-uuid',
+                    'a_uuid': response['uuid']
+                }
+                add_record(IdRecord(**record))
+
+                record = {
+                    'source': crm_org[current_org_type],
+                    'document': 'crm',
+                    'control': control_id,
+                    'statement': statement_id,
+                    'relation': 'inherited',
+                    'uuid_name': 'inherited-uuid',
+                    'uuid': inherited_uuid,
+                    'a_uuid_name': 'provided-uuid',
+                    'a_uuid': response['uuid']
+                }
+                add_record(IdRecord(**record))
+                # End Track Connections     
+
 
         ##### PROVIDED ##############################################
         if 'provided' in dir(component):
-            inherited_uuid = get_marker_uuid(marker)
-            # print(f"{inherited_uuid}:{component.provided[0]['uuid']}")
-            crm_inherited_content.append({
-                'uuid': inherited_uuid,
-                'provided-uuid': component.provided[0]['uuid'],
-                # 'satisfied-uuid': satisfied_uuid,
-                'description': ''
-                    + component.provided[0]['description']            
-            })
+            for response in component.provided:
+                inherited_uuid = get_marker_uuid(marker)
+                # print(f"{inherited_uuid}:{response['uuid']}")
+                crm_inherited_content.append({
+                    'uuid': inherited_uuid,
+                    'provided-uuid': response['uuid'],
+                    # 'satisfied-uuid': satisfied_uuid,
+                    'description': ''
+                        + response['description'],
+                    'exportable': True            
+                })
 
-            record = {
-                'source': current_org_type,
-                'document': 'ssp',
-                'control': control_id,
-                'statement': statement_id,
-                'relation': 'inherited',
-                'uuid_name': 'inherited-uuid',
-                'uuid': inherited_uuid,
-                'a_uuid_name': 'provided-uuid',
-                'a_uuid': component.provided[0]['uuid']
-            }
-            add_record(IdRecord(**record))
+                # Track Connections
+                ##### INHERITED ##############################################
+                record = {
+                    'source': current_org_type,
+                    'document': 'ssp',
+                    'control': control_id,
+                    'statement': statement_id,
+                    'relation': 'inherited',
+                    'uuid_name': 'inherited-uuid',
+                    'uuid': inherited_uuid,
+                    'a_uuid_name': 'provided-uuid',
+                    'a_uuid': response['uuid']
+                }
+                add_record(IdRecord(**record))
 
-            record = {
-                'source': crm_org[current_org_type],
-                'document': 'crm',
-                'control': control_id,
-                'statement': statement_id,
-                'relation': 'provided',
-                'a_uuid_name': '',
-                'a_uuid': '',
-                'uuid_name': 'provided-uuid',
-                'uuid': component.provided[0]['uuid']
-            }
-            add_record(IdRecord(**record))
-            # End Track Connections
+                record = {
+                    'source': crm_org[current_org_type],
+                    'document': 'crm',
+                    'control': control_id,
+                    'statement': statement_id,
+                    'relation': 'provided',
+                    'a_uuid_name': '',
+                    'a_uuid': '',
+                    'uuid_name': 'provided-uuid',
+                    'uuid': response['uuid']
+                }
+                add_record(IdRecord(**record))
+                # End Track Connections                
 
         ##### RESPONSIBILITIES ##############################################
         if 'responsibilities' in dir(component):
-            satisfied_uuid = get_marker_uuid(marker)
-            crm_satisfied_content.append({
-                'uuid': satisfied_uuid,
-                'responsibility-uuid': component.responsibilities[0]['uuid'],
-                'description': ''
-                    + component.responsibilities[0]['description'] 
-                    + ' (Random SATISFIED Content Follows) ' 
-                    + random_prose(component.responsibilities[0]['description'])     
-            })
+            for response in component.responsibilities:
+                satisfied_uuid = get_marker_uuid(marker)
+                crm_satisfied_content.append({
+                    'uuid': satisfied_uuid,
+                    'responsibility-uuid': response['uuid'],
+                    'description': ''
+                        + response['description'] 
+                        + ' (Random SATISFIED Content Follows) ' 
+                        + random_prose(response['description'])     
+                })
 
-            # Track Connections
-            record = {
-                'source': current_org_type,
-                'document': 'ssp',
-                'control': control_id,
-                'statement': statement_id,
-                'relation': 'satisfied',
-                'uuid_name': 'satisfied-uuid',
-                'uuid': satisfied_uuid,
-                'a_uuid_name': 'responsibilities-uuid',
-                'a_uuid': component.responsibilities[0]['uuid']
-            }
-            add_record(IdRecord(**record))
+                # Track Connections
+                ##### SATISFIED ##############################################
+                record = {
+                    'source': current_org_type,
+                    'document': 'ssp',
+                    'control': control_id,
+                    'statement': statement_id,
+                    'relation': 'satisfied',
+                    'uuid_name': 'satisfied-uuid',
+                    'uuid': satisfied_uuid,
+                    'a_uuid_name': 'responsibilities-uuid',
+                    'a_uuid': response['uuid']
+                }
+                add_record(IdRecord(**record))
 
-            record = {
-                'source': crm_org[current_org_type],
-                'document': 'crm',
-                'control': control_id,
-                'statement': statement_id,
-                'relation': 'responsibilities',
-                'a_uuid_name': '',
-                'a_uuid': '',
-                'uuid_name': 'responsibilities-uuid',
-                'uuid': component.responsibilities[0]['uuid']
-            }
-            add_record(IdRecord(**record))
-            # End Track Connections
+                record = {
+                    'source': crm_org[current_org_type],
+                    'document': 'crm',
+                    'control': control_id,
+                    'statement': statement_id,
+                    'relation': 'responsibilities',
+                    'a_uuid_name': '',
+                    'a_uuid': '',
+                    'uuid_name': 'responsibilities-uuid',
+                    'uuid': response['uuid']
+                }
+                add_record(IdRecord(**record))
+                # End Track Connections
 
     return (crm_inherited_content,crm_satisfied_content)
 
@@ -385,7 +439,8 @@ def build_ssp(filepath_template, metadata, controls=None, crm=None):
                     'uuid': inherited_uuid,
                     'provided-uuid': provided_uuid,
                     # 'satisfied-uuid': satisfied_uuid,
-                    'description': row['export_responsibility']                 
+                    'description': row['export_responsibility'],
+                    'exportable': True                 
                 }]
                 
                 if len(crm_inherited_content) > 0:
